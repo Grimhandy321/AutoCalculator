@@ -1,14 +1,13 @@
 import pandas as pd
 import pickle
-import os
 
 from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score, mean_absolute_error
-
+from xgboost import XGBRegressor
+from data.data_cleaner import full_cleaning_pipeline
 
 # 1. Load Data
 DATA_PATH = "../data/autojarov_cars.csv"
@@ -16,18 +15,10 @@ MODEL_OUTPUT_PATH = "model.pkl"
 
 df = pd.read_csv(DATA_PATH)
 
+
+
 print("Loaded dataset shape:", df.shape)
-
-
-# 2. Basic Cleaning
-df = df.drop_duplicates()
-
-df = df[df["km"] >= 0]
-df = df[df["price"] > 0]
-df = df[df["year"] > 1990]
-
-df = df.dropna()
-
+df = full_cleaning_pipeline(df)
 print("After cleaning:", df.shape)
 
 
@@ -38,7 +29,7 @@ y = df["price"]
 
 # 4. Train/Test Split
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
+    X, y, test_size=0.1, random_state=42
 )
 
 print("Train size:", X_train.shape)
@@ -48,7 +39,7 @@ print("Test size:", X_test.shape)
 # 5. Preprocessing
 categorical_features = [
     "brand",
-    "engine_type",
+    # "engine_type",
     "fuel",
     "transmission"
 ]
@@ -66,12 +57,16 @@ preprocessor = ColumnTransformer(
 )
 
 
-# 6. Model Definition
-model = RandomForestRegressor(
-    n_estimators=200,
-    max_depth=None,
+# 6. Model Definition (XGBoost)
+model = XGBRegressor(
+    n_estimators=500,
+    learning_rate=0.05,
+    max_depth=5,
+    subsample=0.8,
+    colsample_bytree=0.8,
     random_state=42,
-    n_jobs=-1
+    n_jobs=-1,
+    objective="reg:squarederror"
 )
 
 
@@ -82,10 +77,11 @@ pipeline = Pipeline(steps=[
 ])
 
 
-
+# 8. Train
 pipeline.fit(X_train, y_train)
 
 
+# 9. Evaluate
 y_pred = pipeline.predict(X_test)
 
 r2 = r2_score(y_test, y_pred)
@@ -100,4 +96,4 @@ print(f"Mean Absolute Error: {mae:,.0f} Kč")
 with open(MODEL_OUTPUT_PATH, "wb") as f:
     pickle.dump(pipeline, f)
 
-print("\nsaved to:", MODEL_OUTPUT_PATH)
+print("\nSaved to:", MODEL_OUTPUT_PATH)
