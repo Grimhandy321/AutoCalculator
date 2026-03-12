@@ -64,10 +64,6 @@ def remove_outliers(df: pd.DataFrame, column: str) -> pd.DataFrame:
 
 
 def full_cleaning_pipeline(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Kompletní pipeline čištění.
-    """
-
     df = basic_cleaning(df)
     df = remove_outliers(df, "price")
     df = df.drop_duplicates()

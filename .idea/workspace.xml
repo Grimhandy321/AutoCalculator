@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="inti">
-      <change afterPath="$PROJECT_DIR$/data/data_cleaner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraper/AAAAutoScraper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraper/AutoJarovScraper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraper/BasicSraper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraper/scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AutoCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AutoCalculator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/autojarov_cars.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/autojarov_cars.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_cleaner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/scrape_autojarov.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,28 +50,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.scrape_autojarov.executor&quot;: &quot;Run&quot;,
-    &quot;Python.trainer.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.scrape_autojarov.executor": "Run",
+    "Python.trainer.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Uživatel\PycharmProjects\AutoCalculator" />
     </key>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-python-sdk-ce6832f46686-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.178" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -78,6 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1770733682699</updated>
+      <workItem from="1773297626920" duration="2463000" />
     </task>
     <task id="LOCAL-00001" summary="inti">
       <option name="closed" value="true" />
@@ -89,6 +91,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inti" />
