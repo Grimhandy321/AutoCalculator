@@ -1,5 +1,7 @@
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from autojarov_scraper import AutoJarovScraper
+
+from aaautoScraper import AAAAutoScraper
+from autoJarovScraper import AutoJarovScraper
 
 
 def run_scraper(scraper):
@@ -13,14 +15,12 @@ def run_all_scrapers():
 
     scrapers = [
         AutoJarovScraper(target_records=2000),
+        AAAAutoScraper(target_records=2000),
     ]
 
     with ThreadPoolExecutor(max_workers=len(scrapers)) as executor:
 
-        futures = [
-            executor.submit(run_scraper, scraper)
-            for scraper in scrapers
-        ]
+        futures = [executor.submit(run_scraper, scraper) for scraper in scrapers]
 
         for future in as_completed(futures):
             try:

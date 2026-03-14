@@ -1,0 +1,1010 @@
+brand,model,engine_type,fuel,transmission,km,price,year,type
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,128529.0,389900,2020.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,28472.0,879900,2025.0,autojarov
+Audi,A5,1.8 TFSI,Petrol,Manual,162828.0,259900,2016.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,149388.0,539900,2020.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,25553.0,589900,2025.0,autojarov
+Kia,CEED,1.4 COMFORT,Petrol,Manual,134354.0,49900,2010.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,27531.0,499000,2025.0,autojarov
+Škoda,KODIAQ,2.0 TSI,Petrol,Automatic,83516.0,899900,2022.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,19030.0,949900,2025.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,98537.0,569900,2022.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,85288.0,289900,2021.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,90946.0,279900,2021.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,125482.0,639900,2021.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,123340.0,659900,2022.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,43224.0,299900,2022.0,autojarov
+Volkswagen,T-Roc,1.5 TSI,Petrol,Manual,115065.0,429900,2022.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,116703.0,489900,2021.0,autojarov
+Škoda,FABIA,1.0 MPI,Petrol,Manual,14142.0,366000,2025.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,29380.0,659900,2025.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,0.0,865900,2026.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,0.0,1045000,2026.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,0.0,1053000,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,797900,2026.0,autojarov
+Volkswagen Užitkové vozy,MULTIVAN,6.1 TREND,Diesel,Automatic,101874.0,919900,2021.0,autojarov
+Hyundai,i30,1.0 T,Petrol,Manual,49520.0,349900,2024.0,autojarov
+Honda,CIVIC,2.0 I,Hybrid,Automatic,0.0,859900,2026.0,autojarov
+Volkswagen Užitkové vozy,CADDY,2.0 TDI,Diesel,Manual,37869.0,699900,2024.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,30066.0,869000,2025.0,autojarov
+Volkswagen Užitkové vozy,CADDY,1.5 TSI,Petrol,Manual,115408.0,459900,2021.0,autojarov
+Volkswagen Užitkové vozy,CADDY,2.0 TDI,Diesel,Manual,102506.0,439900,2021.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,84271.0,279900,2021.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Manual,0.0,654800,2026.0,autojarov
+Volkswagen,BEETLE,2.0 TSI,Petrol,Automatic,74609.0,379900,2013.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,64942.0,319900,2021.0,autojarov
+Volkswagen,Tiguan,1.4 TSI,Petrol,Manual,104391.0,399900,2018.0,autojarov
+Škoda,CITIGO,1.0 MPI,Petrol,Automatic,16763.0,219900,2017.0,autojarov
+Toyota,COROLLA,1.6 VALVEMATIC,Petrol,Manual,116067.0,239900,2015.0,autojarov
+Volkswagen,Polo,1.0 TSI,Petrol,Automatic,36207.0,389900,2022.0,autojarov
+Toyota,RAV4,2.0 VVT,Petrol,Manual,41221.0,629900,2022.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,117497.0,689900,2021.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Manual,64224.0,399000,2022.0,autojarov
+Honda,CIVIC,2.0 I,Hybrid,Automatic,0.0,799900,2026.0,autojarov
+Honda,ZR-V,2.0 I,Hybrid,Automatic,0.0,882000,2026.0,autojarov
+Honda,Prelude,2.0 ADVANCE,Hybrid,Automatic,0.0,1199900,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,9845.0,519000,2025.0,autojarov
+Škoda,Kamiq,1.0 TSI,Petrol,Manual,0.0,574200,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,0.0,554300,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,0.0,519300,2026.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Automatic,0.0,649800,2026.0,autojarov
+Honda,CIVIC,1.8 I,Petrol,Manual,108984.0,94900,2008.0,autojarov
+SEAT,Leon,1.5 TSI,Petrol,Manual,84915.0,409900,2022.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,30523.0,579900,2025.0,autojarov
+Citroën,CITROEN,1.6 HDI,Diesel,Manual,159053.0,199900,2016.0,autojarov
+SEAT,Leon,2.0 TDI,Diesel,Manual,191373.0,189900,2014.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,0.0,733000,2026.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Manual,56478.0,409900,2021.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,74567.0,429900,2022.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,143576.0,499900,2021.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,171731.0,729900,2022.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,22478.0,459900,2021.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,11818.0,839900,2024.0,autojarov
+Volkswagen,Touran,1.5 TSI,Petrol,Automatic,179320.0,409900,2019.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Manual,147599.0,389900,2023.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,12764.0,979000,2024.0,autojarov
+Honda,HR-V,1.5 I,Hybrid,Automatic,0.0,614900,2026.0,autojarov
+Honda,HR-V,1.5 I,Hybrid,Automatic,0.0,674900,2026.0,autojarov
+Volkswagen,Sharan,1.4 TSI,Petrol,Manual,125392.0,619900,2021.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,18702.0,1219000,2025.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,19498.0,639900,2025.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,20982.0,679900,2025.0,autojarov
+Audi,Q3,,Petrol,Automatic,0.0,949000,2026.0,autojarov
+Audi,Q3,,Diesel,Automatic,0.0,1599000,2026.0,autojarov
+Audi,Q3,,Diesel,Automatic,0.0,1549000,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,729800,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,759300,2026.0,autojarov
+Honda,CIVIC,2.0 I,Hybrid,Automatic,0.0,759900,2026.0,autojarov
+Volkswagen,PASSAT,2.0 TDI,Diesel,Automatic,79026.0,599900,2022.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1399000,2026.0,autojarov
+Subaru,FORESTER,2.0 D,Diesel,Manual,159530.0,139900,2011.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,24775.0,809000,2025.0,autojarov
+Škoda,ENYAQ,,Electric,Automatic,77839.0,599900,2021.0,autojarov
+Volkswagen,e-up!,,Electric,Automatic,30790.0,329900,2021.0,autojarov
+CUPRA,Ateca,1.5 TSI,Petrol,Automatic,22309.0,739900,2025.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,13872.0,444000,2025.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,5464.0,484000,2025.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,7073.0,584000,2025.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,12659.0,699000,2025.0,autojarov
+Volkswagen,Golf,1.4 TSI,Cng,Manual,104652.0,219900,2014.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,0.0,1049100,2026.0,autojarov
+Audi,A6,3.0 TDI,Diesel,Automatic,144376.0,499900,2017.0,autojarov
+Škoda,KAROQ,2.0 TDI,Diesel,Manual,8944.0,722000,2025.0,autojarov
+Audi,A4,,Petrol,Automatic,46032.0,1319900,2023.0,autojarov
+Audi,Q7,,Diesel,Automatic,68827.0,1469900,2023.0,autojarov
+Audi,A5,,Diesel,Automatic,0.0,1699900,2026.0,autojarov
+Toyota,PROACE,1.5 D,Diesel,Manual,63002.0,349900,2023.0,autojarov
+Volkswagen,VW,,Electric,Automatic,149037.0,399900,2020.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,40007.0,549900,2023.0,autojarov
+Peugeot,2008,1.2 PURETECH,Petrol,Automatic,78668.0,164900,2018.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,802700,2026.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Automatic,0.0,680700,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,604200,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,584300,2026.0,autojarov
+Škoda,OCTAVIA,1.0 TSI,Petrol,Manual,130953.0,299000,2021.0,autojarov
+Volkswagen,Golf,1.0 TSI,Petrol,Manual,37779.0,419900,2022.0,autojarov
+Volkswagen,Touran,2.0 TDI,Diesel,Automatic,12960.0,828000,2025.0,autojarov
+Toyota,YARIS,1.5 VVT,Petrol,Manual,52852.0,329900,2018.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Manual,27999.0,564000,2024.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TSI,Petrol,Automatic,0.0,1519900,2026.0,autojarov
+Volkswagen,Tiguan,2.0 TSI,Petrol,Automatic,130583.0,459900,2018.0,autojarov
+Škoda,RAPID,1.4 TSI,Petrol,Automatic,111449.0,319900,2018.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,35998.0,879900,2025.0,autojarov
+CUPRA,Formentor,1.5 TSI,Petrol,Automatic,34923.0,729900,2023.0,autojarov
+Škoda,E-CITIGO,,Electric,Automatic,52457.0,318000,2020.0,autojarov
+CUPRA,Ateca,1.5 TSI,Petrol,Automatic,32535.0,699900,2025.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,46893.0,569900,2023.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,154016.0,469000,2022.0,autojarov
+CUPRA,Formentor,1.5 TSI,Petrol,Automatic,47343.0,609000,2023.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,19527.0,449900,2025.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,34686.0,729000,2025.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,34476.0,739900,2025.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,88495.0,379900,2021.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,36646.0,679900,2025.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,26403.0,869900,2025.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,65927.0,459000,2020.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Manual,179574.0,469900,2019.0,autojarov
+Škoda,OCTAVIA,2.0 TSI,Petrol,Automatic,0.0,1123700,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,0.0,559300,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,602100,2026.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Automatic,0.0,674800,2026.0,autojarov
+Škoda,Kamiq,1.0 TSI,Petrol,Manual,0.0,594800,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,52595.0,539900,2022.0,autojarov
+Volkswagen,Golf,1.5 TSI,Petrol,Automatic,30085.0,619900,2024.0,autojarov
+Volkswagen,GOLF,1.5 TSI,Petrol,Manual,55166.0,499900,2023.0,autojarov
+SEAT,Leon,1.5 TSI,Petrol,Manual,57755.0,489900,2021.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,149982.0,429900,2017.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,13995.0,679900,2024.0,autojarov
+Volkswagen,Tiguan,1.5 TSI,Petrol,Manual,61940.0,539900,2021.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,18446.0,1135000,2025.0,autojarov
+Škoda,ELROQ,,Electric,Automatic,1625.0,749900,2025.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Automatic,0.0,694700,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,644700,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,945000,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,951000,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Manual,0.0,805900,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,825900,2026.0,autojarov
+Škoda,KAROQ,2.0 TDI,Diesel,Automatic,0.0,941900,2026.0,autojarov
+Škoda,KAROQ,2.0 TDI,Diesel,Automatic,0.0,1035900,2026.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Manual,0.0,634200,2026.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Manual,0.0,614300,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,0.0,954300,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,0.0,996300,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,0.0,958300,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,0.0,950800,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,0.0,927800,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,0.0,984800,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,0.0,770300,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,694700,2026.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Automatic,0.0,687000,2026.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Automatic,0.0,680700,2026.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Manual,0.0,589300,2026.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Manual,0.0,629700,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,0.0,448600,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,0.0,455200,2026.0,autojarov
+CUPRA,Formentor,2.5 TSI,Petrol,Automatic,0.0,1761700,2026.0,autojarov
+CUPRA,Formentor,2.5 TSI,Petrol,Automatic,0.0,1794200,2026.0,autojarov
+Volkswagen,Passat,1.5 TSI,Petrol,Automatic,136394.0,499900,2021.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,155297.0,379900,2021.0,autojarov
+Volkswagen,Golf,1.6 TDI,Diesel,Automatic,70108.0,399900,2019.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,171562.0,259900,2022.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,149075.0,269900,2022.0,autojarov
+SEAT,Tarraco,1.5 TSI,Petrol,Manual,111840.0,449900,2019.0,autojarov
+Volkswagen,TAYRON,1.5 ETSI,Petrol,Automatic,26758.0,1199900,2025.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,4800.0,675000,2025.0,autojarov
+Audi,A6,,Diesel,Automatic,118863.0,849900,2021.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,126165.0,379900,2019.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,16635.0,468000,2025.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,18545.0,499900,2025.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,25160.0,1069900,2024.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,18499.0,589000,2025.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1449200,2026.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1436000,2026.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1399500,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,162708.0,379900,2020.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,149955.0,569900,2020.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,14448.0,678000,2025.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,65627.0,498000,2023.0,autojarov
+Škoda,ENYAQ,,Electric,Automatic,20857.0,589900,2023.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1265200,2026.0,autojarov
+Volkswagen,GOLF,1.5 TSI,Petrol,Manual,42016.0,459000,2022.0,autojarov
+Volkswagen,VW,1.6 TDI,Diesel,Manual,129749.0,229900,2014.0,autojarov
+Renault,CLIO,0.9 TCE,Petrol,Manual,126172.0,189900,2019.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,28617.0,399900,2023.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,73436.0,354900,2023.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,27892.0,960000,2024.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,0.0,873500,2026.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,0.0,1319900,2026.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Automatic,0.0,658900,2026.0,autojarov
+Volkswagen,Golf,1.0 TSI,Petrol,Manual,110706.0,379900,2022.0,autojarov
+Volkswagen,Tayron,1.5 ETSI,Petrol,Automatic,0.0,998000,2026.0,autojarov
+Volkswagen,GOLF,1.5 TSI,Petrol,Manual,114835.0,419900,2023.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,142321.0,749900,2022.0,autojarov
+Citroën,CITROEN,1.6 HDI,Diesel,Manual,97767.0,184900,2015.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Automatic,17004.0,598000,2025.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,19204.0,719000,2025.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,29919.0,599000,2024.0,autojarov
+Audi,Q7,,Diesel,Automatic,0.0,1845000,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,39329.0,629900,2023.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,151344.0,269900,2021.0,autojarov
+Volkswagen,ID.,,Electric,Automatic,67103.0,419900,2021.0,autojarov
+Mazda,CX-,2.5I,Petrol,Automatic,131000.0,489900,2018.0,autojarov
+SEAT,TARRACO,2.0 TDI,Diesel,Automatic,88417.0,719900,2021.0,autojarov
+Škoda,KAROQ,2.0 TDI,Diesel,Manual,18470.0,619900,2024.0,autojarov
+Audi,Q7,,Diesel,Automatic,138204.0,1329900,2023.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,24894.0,709900,2025.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,11128.0,714000,2025.0,autojarov
+Škoda,YETI,1.6 TDI,Diesel,Automatic,118787.0,199900,2014.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,125494.0,249900,2022.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,63659.0,449900,2021.0,autojarov
+Škoda,KAROQ,2.0 TDI,Diesel,Automatic,11174.0,969900,2024.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,86656.0,439000,2022.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,20091.0,719000,2025.0,autojarov
+Honda,JAZZ,1.5 I,Hybrid,Automatic,0.0,599900,2026.0,autojarov
+Honda,CR-V,2.0 I,Hybrid,Automatic,0.0,1079900,2026.0,autojarov
+Volkswagen,Touran,2.0 TDI,Diesel,Automatic,20018.0,814000,2025.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,0.0,975900,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,0.0,515800,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,0.0,579800,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,0.0,513800,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,0.0,553800,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,146859.0,259900,2020.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,0.0,510300,2026.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,0.0,727000,2026.0,autojarov
+Volkswagen,GOLF,1.5 TSI,Petrol,Manual,79850.0,399900,2021.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Manual,11540.0,598000,2025.0,autojarov
+Volkswagen,PASSAT,2.0 TDI,Diesel,Automatic,23609.0,869900,2024.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,595800,2026.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Automatic,0.0,685800,2026.0,autojarov
+Škoda,KAROQ,2.0 TDI,Diesel,Automatic,0.0,1045000,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1316900,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,15401.0,494000,2025.0,autojarov
+Volkswagen,Tayron,2.0 TSI,Petrol,Automatic,0.0,1398900,2026.0,autojarov
+Volkswagen,Tayron,2.0 TSI,Petrol,Automatic,0.0,1399900,2026.0,autojarov
+Volkswagen Užitkové vozy,TRANSPORTER,6.1 KOMBI,Diesel,Manual,119163.0,699900,2022.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,167974.0,479900,2022.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,161297.0,209900,2022.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,148661.0,199900,2022.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,29322.0,445900,2024.0,autojarov
+Volkswagen,Touran,1.5 TSI,Petrol,Automatic,14410.0,769000,2025.0,autojarov
+SEAT,Arona,1.0 TSI,Petrol,Manual,26108.0,519900,2023.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,26110.0,534900,2023.0,autojarov
+Škoda,ENYAQ,,Electric,Automatic,45160.0,549900,2022.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,27057.0,474900,2023.0,autojarov
+Peugeot,BOXER,2.2 BLUE,Diesel,Manual,127209.0,378000,2020.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,23758.0,699900,2025.0,autojarov
+Audi,Q5,,Diesel,Automatic,0.0,1819900,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1384700,2026.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,17597.0,1119000,2025.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,19937.0,1109000,2025.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,14152.0,439000,2024.0,autojarov
+Volkswagen,Touran,2.0 TDI,Diesel,Automatic,11489.0,824000,2025.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,8974.0,529000,2025.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,788000,2026.0,autojarov
+Audi,A6,,Diesel,Automatic,150389.0,724000,2021.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,983400,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,934800,2026.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1187200,2026.0,autojarov
+Škoda,SUPERB,2.0 TSI,Petrol,Automatic,0.0,1482500,2026.0,autojarov
+Audi,A6,,Diesel,Automatic,94119.0,869900,2021.0,autojarov
+Volkswagen Užitkové vozy,Caravelle,2.0 TDI,Diesel,Manual,0.0,1149000,2025.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Automatic,0.0,692800,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1388900,2026.0,autojarov
+Porsche,CAYENNE,4.0 GTS,Petrol,Automatic,158610.0,1749900,2022.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,116497.0,564900,2020.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Cng,Automatic,47234.0,489900,2022.0,autojarov
+Mitsubishi,ASX,1.6 NIVEC,Petrol,Manual,90433.0,239900,2016.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,19038.0,749900,2024.0,autojarov
+Toyota,YARIS,1.5 HYBRID,Hybrid,Automatic,21356.0,599900,2023.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,157456.0,239900,2022.0,autojarov
+Audi,Q3,,Petrol,Automatic,0.0,1107900,2026.0,autojarov
+Volkswagen Užitkové vozy,Transporter,,Diesel,Manual,113111.0,499900,2019.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,59417.0,479900,2021.0,autojarov
+Škoda,KODIAQ,1.5 TSI,Hybrid,Automatic,25734.0,1169900,2025.0,autojarov
+CUPRA,Leon,1.5 TSI,Petrol,Manual,0.0,672900,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,20975.0,709900,2024.0,autojarov
+BMW,XD,,Diesel,Manual,87910.0,283000,2014.0,autojarov
+Volkswagen Užitkové vozy,Caddy,1.4 TSI,Petrol,Manual,143338.0,463000,2021.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,16255.0,539900,2025.0,autojarov
+Volkswagen,Passat,1.5 TSI,Petrol,Automatic,67611.0,499900,2021.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,77012.0,539900,2023.0,autojarov
+Volkswagen,Golf,1.2 TSI,Petrol,Automatic,176905.0,179900,2014.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1602600,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1440100,2026.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1279900,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,0.0,637800,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,667800,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,781300,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,746300,2026.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,0.0,674900,2026.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,0.0,650900,2026.0,autojarov
+CUPRA,Leon,1.5 TSI,Petrol,Manual,0.0,669900,2026.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,0.0,793500,2026.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Automatic,0.0,709900,2026.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Manual,0.0,574900,2026.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Manual,0.0,571900,2026.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,0.0,653900,2026.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,0.0,649900,2026.0,autojarov
+CUPRA,Leon,2.0 TSI,Petrol,Automatic,0.0,799900,2026.0,autojarov
+CUPRA,Leon,1.5 ETSI,Hybrid,Automatic,0.0,849900,2026.0,autojarov
+CUPRA,Leon,1.5 ETSI,Hybrid,Automatic,0.0,759900,2026.0,autojarov
+CUPRA,Leon,1.5 ETSI,Hybrid,Automatic,0.0,739900,2026.0,autojarov
+CUPRA,Leon,2.0 TSI,Petrol,Automatic,0.0,839900,2026.0,autojarov
+CUPRA,Leon,2.0 TSI,Petrol,Automatic,0.0,879900,2026.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,0.0,662900,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TDI,Diesel,Automatic,0.0,883300,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TDI,Diesel,Manual,0.0,898589,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,1.5 TSI,Petrol,Automatic,0.0,894076,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,75850.0,499900,2023.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,15150.0,538000,2025.0,autojarov
+Volkswagen Užitkové vozy,Entry,2.0 TDI,Diesel,Automatic,0.0,1329900,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,1.5 TSI,Petrol,Manual,0.0,799900,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,1.5 TSI,Petrol,Manual,0.0,899900,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TDI,Diesel,Automatic,0.0,1059900,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TDI,Diesel,Automatic,0.0,1539900,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,891900,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TSI,Petrol,Automatic,0.0,1151200,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1362700,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1383000,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TDI,Diesel,Automatic,0.0,1769900,2026.0,autojarov
+Volkswagen Užitkové vozy,let,2.0 TDI,Diesel,Manual,0.0,819900,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1507700,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1528000,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1433000,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1411000,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1429000,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,24919.0,599900,2024.0,autojarov
+Honda,CR-V,2.0 I,Hybrid,Automatic,0.0,1199900,2026.0,autojarov
+Škoda,KODIAQ,1.5 TSI,Petrol,Automatic,0.0,1063000,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,790300,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,815300,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,904300,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,841800,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,58832.0,639900,2024.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,791800,2026.0,autojarov
+Audi,Q5,2.0 TDI,Diesel,Automatic,184244.0,549900,2018.0,autojarov
+Volkswagen Užitkové vozy,Caravelle,2.0 TDI,Diesel,Manual,75413.0,674000,2018.0,autojarov
+CUPRA,Ateca,2.0 TSI,Petrol,Automatic,0.0,954900,2026.0,autojarov
+CUPRA,Ateca,2.0 TSI,Petrol,Automatic,0.0,934900,2026.0,autojarov
+CUPRA,Ateca,2.0 TSI,Petrol,Automatic,0.0,942900,2026.0,autojarov
+CUPRA,Ateca,2.0 TSI,Petrol,Automatic,0.0,939900,2026.0,autojarov
+CUPRA,Formentor,1.5 ETSI,Petrol,Automatic,0.0,849900,2026.0,autojarov
+CUPRA,Formentor,1.5 ETSI,Petrol,Automatic,0.0,824900,2026.0,autojarov
+CUPRA,Formentor,1.5 TSI,Petrol,Manual,0.0,739900,2026.0,autojarov
+Volkswagen,ID.,,Electric,Automatic,0.0,1570000,2026.0,autojarov
+Škoda,OCTAVIA,1.4 TSI,Petrol,Manual,138521.0,289900,2016.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,18011.0,454000,2024.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,30853.0,409900,2024.0,autojarov
+Škoda,CITIGO,1.0 MPI,Petrol,Manual,109696.0,199900,2019.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,181352.0,489900,2019.0,autojarov
+Volkswagen Užitkové vozy,Multivan,6.1 HL,Diesel,Automatic,118193.0,1169900,2020.0,autojarov
+Honda,CIVIC,2.0 I,Hybrid,Automatic,0.0,839900,2026.0,autojarov
+Volkswagen,Golf,1.0 TSI,Petrol,Manual,97450.0,399900,2022.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,42172.0,829900,2024.0,autojarov
+Honda,ZR-V,2.0 I,Hybrid,Automatic,0.0,759900,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,0.0,543900,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,0.0,545900,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,920000,2026.0,autojarov
+Škoda,KAROQ,2.0 TDI,Diesel,Automatic,0.0,1060000,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,960000,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Manual,0.0,808400,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,142315.0,219900,2018.0,autojarov
+CUPRA,Formentor,1.5 ETSI,Petrol,Automatic,0.0,804900,2026.0,autojarov
+CUPRA,Formentor,2.0 TSI,Petrol,Automatic,0.0,919900,2026.0,autojarov
+Volkswagen Užitkové vozy,CADDY,2.0 TDI,Diesel,Manual,93918.0,429900,2021.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,13271.0,544000,2025.0,autojarov
+SEAT,Leon,1.5 TSI,Petrol,Manual,0.0,582900,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,24301.0,543000,2025.0,autojarov
+CUPRA,Formentor,2.0 TDI,Diesel,Automatic,34080.0,659900,2022.0,autojarov
+Audi,Q7,,Diesel,Automatic,150233.0,1174900,2021.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,23627.0,684900,2024.0,autojarov
+CUPRA,Terramar,2.0 TSI,Petrol,Automatic,0.0,1254900,2026.0,autojarov
+CUPRA,Terramar,2.0 TSI,Petrol,Automatic,0.0,1154900,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,12591.0,559900,2025.0,autojarov
+Škoda,KODIAQ,1.5 TSI,Hybrid,Automatic,20780.0,1169000,2025.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Automatic,10518.0,479900,2025.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,0.0,777900,2026.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,0.0,652900,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1458100,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1524000,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,120267.0,209900,2020.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,66785.0,449900,2022.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,37905.0,799900,2024.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,17715.0,1049000,2024.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,37339.0,588000,2024.0,autojarov
+Audi,A6,,Diesel,Automatic,173128.0,629900,2020.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,110565.0,299900,2020.0,autojarov
+Audi,Q5,,Diesel,Automatic,32691.0,1139000,2025.0,autojarov
+SEAT,Leon,1.5 TSI,Petrol,Manual,106539.0,319000,2019.0,autojarov
+Volkswagen Užitkové vozy,T6,2.0 TDI,Diesel,Automatic,189749.0,574000,2019.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,0.0,777000,2026.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,0.0,770000,2026.0,autojarov
+Volkswagen,GOLF,1.5 TSI,Petrol,Manual,108430.0,379900,2020.0,autojarov
+Opel,ASTRA,1.6 CDTI,Diesel,Manual,69279.0,209900,2018.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,15777.0,764000,2025.0,autojarov
+Volkswagen,ID.,,Electric,Automatic,0.0,999900,2026.0,autojarov
+Volkswagen,Tiguan,1.5 TSI,Hybrid,Automatic,0.0,985900,2026.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,0.0,1176900,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1149900,2026.0,autojarov
+Volkswagen,Tayron,1.5 ETSI,Petrol,Automatic,0.0,954900,2026.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,0.0,1063900,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1052900,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,108599.0,459000,2021.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1143900,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,34950.0,689000,2024.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,29518.0,499000,2024.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Manual,18469.0,699000,2024.0,autojarov
+Honda,CR-V,2.0 I,Hybrid,Automatic,0.0,1014900,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,21140.0,439000,2024.0,autojarov
+Volkswagen,Touran,2.0 TDI,Diesel,Automatic,95331.0,589900,2019.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,104956.0,589900,2021.0,autojarov
+Audi,A6,3.0 BITDI,Diesel,Automatic,166629.0,499000,2014.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,128509.0,449900,2019.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,126081.0,799900,2022.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,30493.0,889900,2024.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,8782.0,569900,2024.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,15106.0,719900,2024.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,24718.0,729000,2025.0,autojarov
+Volkswagen,Golf,1.2 TSI,Petrol,Automatic,119776.0,249900,2015.0,autojarov
+Škoda,OCTAVIA,2.0 TSI,Petrol,Automatic,19187.0,859000,2024.0,autojarov
+SEAT,Arona,,Petrol,Manual,0.0,475900,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,35366.0,649900,2024.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,128190.0,629000,2021.0,autojarov
+SEAT,Arona,,Petrol,Automatic,0.0,599900,2026.0,autojarov
+SEAT,Arona,,Petrol,Automatic,0.0,596900,2026.0,autojarov
+Škoda,FABIA,1.0 MPI,Petrol,Manual,14570.0,359000,2024.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,9301.0,669900,2025.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Automatic,38051.0,519900,2023.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,50072.0,1049900,2024.0,autojarov
+Volkswagen,ECO,1.0 CNG,Cng,Manual,177383.0,149900,2022.0,autojarov
+Škoda,OCTAVIA,2.0 TSI,Petrol,Automatic,35741.0,759900,2023.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Manual,93967.0,464000,2020.0,autojarov
+Škoda,KODIAQ,1.5 TSI,Petrol,Automatic,0.0,1168900,2026.0,autojarov
+Škoda,YETI,2.0 TDI,Diesel,Manual,60663.0,284000,2017.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1299900,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TDI,Diesel,Automatic,0.0,1614900,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TDI,Diesel,Automatic,0.0,1439900,2026.0,autojarov
+Audi,S6,,Diesel,Automatic,17401.0,1459900,2024.0,autojarov
+Volkswagen Užitkové vozy,Akční,1.5 TSI,Petrol,Manual,0.0,729900,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,27102.0,599000,2024.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,30832.0,849900,2024.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,18635.0,634000,2025.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,26027.0,489000,2024.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,26461.0,399000,2024.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,26699.0,679000,2025.0,autojarov
+Škoda,OCTAVIA,1.4 TSI,Petrol,Manual,135986.0,274000,2015.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,12139.0,679900,2023.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,15612.0,498000,2024.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,127691.0,619900,2021.0,autojarov
+Škoda,ELROQ,,Electric,Automatic,0.0,1198500,2026.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Automatic,0.0,691700,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,589200,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,0.0,600700,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,19594.0,424000,2024.0,autojarov
+Škoda,KAROQ,2.0 TDI,Diesel,Manual,169158.0,449000,2020.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,34693.0,524000,2023.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,40722.0,569000,2023.0,autojarov
+Volkswagen,Tiguan,1.5 TSI,Petrol,Manual,90670.0,439000,2019.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,11423.0,498000,2024.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,5000.0,696000,2026.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,0.0,650670,2026.0,autojarov
+Mercedes-Benz,Mercedes,,Diesel,Manual,127873.0,409900,2017.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,25966.0,849900,2024.0,autojarov
+Honda,CR-V,1.6 LIFESTYLE,Diesel,Automatic,164550.0,289000,2016.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,900700,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,874200,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,26482.0,724000,2024.0,autojarov
+Volkswagen,BEETLE,1.2 TSI,Petrol,Automatic,131175.0,273000,2016.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1379000,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,18591.0,729000,2025.0,autojarov
+Volkswagen,Polo,1.0 TSI,Petrol,Manual,0.0,527900,2026.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,25215.0,849900,2024.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,0.0,664900,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,181080.0,219900,2021.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,87769.0,474000,2021.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,35743.0,929000,2022.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,51231.0,544000,2024.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,22430.0,724000,2024.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Manual,0.0,637600,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1479900,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,12969.0,669900,2025.0,autojarov
+Volkswagen,TAIGO,1.0 TSI,Petrol,Manual,54098.0,434900,2022.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,94901.0,399900,2019.0,autojarov
+Volkswagen,TIGUAN,1.5 TSI,Petrol,Automatic,48463.0,654000,2022.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,593300,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,0.0,553800,2026.0,autojarov
+Škoda,FABIA,1.5 TSI,Petrol,Automatic,12272.0,559900,2025.0,autojarov
+SEAT,LEON,1.5 TSI,Petrol,Manual,80422.0,399000,2021.0,autojarov
+Volkswagen,Passat,1.5 ETSI,Petrol,Automatic,28864.0,809000,2024.0,autojarov
+CUPRA,Formentor,1.5 ETSI,Hybrid,Automatic,10000.0,799900,2025.0,autojarov
+CUPRA,Formentor,1.5 TSI,Petrol,Automatic,91745.0,576000,2022.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,27604.0,599000,2025.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,30436.0,1174900,2024.0,autojarov
+Kia,CEED,1.6 CRDI,Diesel,Manual,145808.0,207000,2017.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,105440.0,534000,2018.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,10558.0,489900,2025.0,autojarov
+Škoda,ENYAQ,,Electric,Automatic,63296.0,499000,2022.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,117756.0,419900,2017.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,26152.0,634000,2024.0,autojarov
+SEAT,Ateca,1.5 TSI,Petrol,Manual,0.0,706300,2026.0,autojarov
+Škoda,SCALA,1.6 TDI,Diesel,Manual,157273.0,322000,2020.0,autojarov
+SEAT,Ateca,1.5 TSI,Petrol,Manual,0.0,686300,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,10000.0,1348000,2025.0,autojarov
+Škoda,KAROQ,2.0 TDI,Diesel,Automatic,10000.0,976000,2025.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Automatic,8000.0,669000,2025.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,7000.0,837000,2025.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,15000.0,589000,2025.0,autojarov
+Škoda,ENYAQ,,Electric,Automatic,5000.0,1099000,2025.0,autojarov
+Škoda,ELROQ,,Electric,Automatic,5000.0,989000,2025.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,5000.0,1269000,2025.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,5000.0,599000,2025.0,autojarov
+Hyundai,TUCSON,1.6 CRDI,Diesel,Manual,61355.0,384000,2020.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,15134.0,1043000,2024.0,autojarov
+Volkswagen,Golf,2.0 TDI,Diesel,Automatic,189193.0,309000,2017.0,autojarov
+Audi,A6,,Hybrid,Automatic,151385.0,639900,2021.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,37504.0,498000,2024.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Automatic,12130.0,479900,2025.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,73254.0,499900,2019.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,11694.0,649900,2025.0,autojarov
+Audi,Q7,,Petrol,Automatic,84074.0,1369900,2022.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Automatic,0.0,579000,2026.0,autojarov
+Škoda,KODIAQ,2.0 TSI,Petrol,Automatic,0.0,1439000,2026.0,autojarov
+Volkswagen Užitkové vozy,Crafter,,Diesel,Automatic,0.0,1249900,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,68363.0,419000,2021.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1119000,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,835000,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,0.0,789000,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1229000,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,,Diesel,Manual,0.0,1164900,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,0.0,629000,2026.0,autojarov
+Honda,CR-V,2.0 HYBRID,Hybrid,Automatic,83257.0,634000,2021.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,0.0,638200,2026.0,autojarov
+Škoda,SUPERB,1.5 TSI,Petrol,Automatic,140888.0,429000,2021.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,93260.0,469000,2022.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,12393.0,458000,2024.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,17237.0,424000,2024.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,14740.0,538000,2025.0,autojarov
+Volkswagen,Passat,1.5 ETSI,Petrol,Automatic,29906.0,814900,2024.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,29033.0,784900,2024.0,autojarov
+Volkswagen Užitkové vozy,Transporter,2.0 TDI,Diesel,Manual,134588.0,484000,2018.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,16563.0,599000,2024.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,116533.0,454900,2021.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,130220.0,399900,2020.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,172376.0,319900,2021.0,autojarov
+Audi,A3,1.4 TFSI,Petrol,Manual,107092.0,154000,2010.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Manual,97284.0,344000,2022.0,autojarov
+CUPRA,Formentor,1.5 ETSI,Hybrid,Automatic,5000.0,879900,2025.0,autojarov
+SEAT,Arona,1.0 TSI,Petrol,Manual,1500.0,524900,2025.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,30609.0,629900,2024.0,autojarov
+Volkswagen,Passat,1.5 ETSI,Petrol,Automatic,26263.0,818000,2024.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,147727.0,204900,2020.0,autojarov
+Nissan,Qashqai,1.3 DIG,Petrol,Manual,69463.0,364000,2021.0,autojarov
+Volkswagen,Passat,1.4 TSI,Hybrid,Automatic,153646.0,359900,2017.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,32678.0,879900,2024.0,autojarov
+Audi,Q7,3.0 TDI,Diesel,Automatic,184818.0,649900,2018.0,autojarov
+Volkswagen,ARTEON,2.0 TDI,Diesel,Automatic,128462.0,559900,2022.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,10281.0,684000,2024.0,autojarov
+Škoda,Kodiaq,2.0 TDI,Diesel,Automatic,45988.0,1149900,2024.0,autojarov
+Audi,Q3,,Petrol,Automatic,0.0,1429000,2026.0,autojarov
+Volkswagen,Golf,1.6 TDI,Diesel,Automatic,139971.0,294000,2018.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,133410.0,214900,2021.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1149000,2026.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Manual,0.0,569900,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,966000,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,0.0,664900,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,71980.0,369900,2023.0,autojarov
+Hyundai,i20,,Petrol,Manual,78448.0,169900,2019.0,autojarov
+Audi,Q5,,Diesel,Automatic,11483.0,1529900,2025.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,0.0,608900,2026.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,0.0,644900,2026.0,autojarov
+Volkswagen,Taigo,1.5 TSI,Petrol,Automatic,0.0,687900,2026.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,0.0,589900,2026.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,26765.0,649900,2024.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,24962.0,649900,2024.0,autojarov
+Volkswagen,Golf,2.0 TDI,Diesel,Manual,57834.0,494000,2021.0,autojarov
+Audi,A3,,Petrol,Automatic,29958.0,619000,2022.0,autojarov
+Škoda,OCTAVIA,1.4 TSI,Hybrid,Automatic,56840.0,549900,2021.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,155596.0,564000,2020.0,autojarov
+Škoda,OCTAVIA,1.2 TSI,Petrol,Manual,160737.0,164000,2013.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,133839.0,579000,2023.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Automatic,70390.0,434000,2021.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,31419.0,569000,2024.0,autojarov
+CUPRA,Terramar,2.0 TSI,Petrol,Automatic,0.0,1119900,2026.0,autojarov
+CUPRA,Leon,2.0 TSI,Petrol,Automatic,0.0,949900,2026.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,28957.0,798800,2024.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,40340.0,1099000,2024.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,0.0,469900,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Automatic,0.0,494900,2026.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,25295.0,649900,2024.0,autojarov
+Volkswagen,Tiguan,2.0 TSI,Petrol,Automatic,72169.0,594000,2019.0,autojarov
+Volkswagen,GOLF,1.5 ETSI,Petrol,Automatic,22434.0,584000,2023.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,22936.0,390000,2023.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,14561.0,652000,2025.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,148083.0,589900,2021.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,31779.0,384000,2021.0,autojarov
+Volkswagen,Golf,1.0 TSI,Petrol,Manual,41012.0,429900,2022.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,15234.0,699000,2025.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,18299.0,479900,2025.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,18834.0,664000,2025.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,96771.0,479900,2023.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Cng,Automatic,113202.0,390000,2021.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,18613.0,733000,2024.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,12299.0,649900,2025.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,0.0,534300,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,0.0,499300,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,169569.0,394900,2021.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,64110.0,479900,2022.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,17246.0,729000,2025.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,17264.0,724000,2025.0,autojarov
+Peugeot,SW,2.0HDI,Diesel,Manual,130951.0,229900,2016.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,28219.0,384000,2024.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,32801.0,569000,2024.0,autojarov
+SEAT,Leon,1.5 TSI,Petrol,Manual,0.0,554900,2025.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,22955.0,684000,2024.0,autojarov
+Škoda,OCTAVIA,1.4 TSI,Hybrid,Automatic,76076.0,479000,2022.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1529700,2026.0,autojarov
+Škoda,SUPERB,1.5 TSI,Petrol,Automatic,97614.0,579900,2021.0,autojarov
+Volkswagen,T-ROC,1.5 TSI,Petrol,Automatic,71805.0,509900,2020.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,104085.0,479000,2022.0,autojarov
+Renault,KOLEOS,2.0 DCI,Diesel,Automatic,101889.0,389000,2017.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,0.0,606000,2026.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,0.0,599000,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,61784.0,449000,2021.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,52510.0,439000,2022.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,18790.0,519900,2024.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Automatic,26171.0,569000,2024.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,67627.0,439000,2022.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,166002.0,279900,2018.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,105314.0,354000,2022.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,167726.0,199000,2021.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,815900,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,796900,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,795400,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Automatic,18886.0,474000,2025.0,autojarov
+Volkswagen,T-ROC,1.5TSI,Petrol,Automatic,32051.0,549900,2022.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,12828.0,459000,2025.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,24617.0,629000,2024.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Automatic,23102.0,549000,2024.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,13407.0,738000,2024.0,autojarov
+CUPRA,Formentor,,Hybrid,Automatic,0.0,979900,2026.0,autojarov
+CUPRA,Formentor,2.0 TSI,Petrol,Automatic,0.0,899900,2026.0,autojarov
+SEAT,Leon,1.5 ETSI,Petrol,Automatic,0.0,649900,2026.0,autojarov
+SEAT,Leon,1.5 ETSI,Petrol,Automatic,0.0,619900,2026.0,autojarov
+SEAT,Leon,1.5 TSI,Petrol,Manual,0.0,549900,2026.0,autojarov
+SEAT,Leon,1.5 TSI,Petrol,Manual,0.0,579900,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,27853.0,709900,2024.0,autojarov
+CUPRA,LEON,2.0 TSI,Petrol,Automatic,47924.0,729900,2022.0,autojarov
+Škoda,OCTAVIA,1.4 TSI,Hybrid,Automatic,72159.0,469900,2022.0,autojarov
+Volkswagen,TIGUAN,2.0 TDI,Diesel,Automatic,40982.0,709000,2023.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Manual,0.0,594400,2026.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Manual,0.0,510000,2026.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,0.0,715600,2026.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Automatic,0.0,606000,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1099900,2026.0,autojarov
+Volkswagen,ID.,,Electric,Automatic,5000.0,1414000,2025.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1105900,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,18007.0,509900,2024.0,autojarov
+Škoda,FABIA,1.0 MPI,Petrol,Manual,10544.0,349000,2024.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,30571.0,944000,2024.0,autojarov
+Volkswagen,PASSAT,2.0 TDI,Diesel,Automatic,107685.0,499900,2021.0,autojarov
+Audi,A4,,Diesel,Automatic,49961.0,598000,2021.0,autojarov
+Peugeot,ALLURE,1.6 BLUEHDI,Diesel,Automatic,127243.0,209900,2016.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,28959.0,384000,2024.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,21853.0,599000,2024.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,18373.0,632000,2024.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,17663.0,599900,2024.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,0.0,447900,2026.0,autojarov
+CUPRA,Ateca,2.0 TSI,Petrol,Automatic,0.0,891900,2026.0,autojarov
+CUPRA,Ateca,1.5 TSI,Petrol,Automatic,0.0,839900,2026.0,autojarov
+CUPRA,Ateca,1.5 TSI,Petrol,Automatic,0.0,824900,2026.0,autojarov
+CUPRA,Ateca,1.5 TSI,Petrol,Automatic,0.0,819900,2026.0,autojarov
+Volkswagen,PASSAT,1.5 TSI,Petrol,Automatic,59337.0,519000,2021.0,autojarov
+Audi,A5,,Diesel,Automatic,0.0,1659900,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,19914.0,699000,2024.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,27850.0,609000,2024.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,55139.0,319900,2022.0,autojarov
+CUPRA,Formentor,1.5 TSI,Petrol,Manual,0.0,719900,2026.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,29516.0,579900,2024.0,autojarov
+CUPRA,Formentor,1.4 E,Hybrid,Automatic,31569.0,764900,2023.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,21901.0,598800,2024.0,autojarov
+Škoda,SUPERB,2.0 TSI,Petrol,Automatic,32942.0,1029900,2024.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1359900,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,12679.0,619900,2024.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,0.0,534300,2026.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,0.0,603800,2026.0,autojarov
+CUPRA,Leon,1.5 ETSI,Hybrid,Automatic,0.0,789900,2026.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Automatic,0.0,769300,2026.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Automatic,0.0,666000,2026.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Automatic,0.0,776800,2026.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,0.0,653700,2026.0,autojarov
+Volkswagen,Golf,1.5 TSI,Petrol,Manual,0.0,579800,2026.0,autojarov
+Volkswagen,Golf,1.5 TSI,Petrol,Manual,0.0,580900,2026.0,autojarov
+Volkswagen,Golf,1.5 TSI,Petrol,Manual,0.0,802400,2026.0,autojarov
+Volkswagen,Golf,1.5 TSI,Petrol,Manual,0.0,812600,2026.0,autojarov
+Volkswagen,Tayron,2.0 TSI,Petrol,Automatic,0.0,1460000,2026.0,autojarov
+Volkswagen,Tayron,2.0 TSI,Petrol,Automatic,0.0,1470200,2026.0,autojarov
+Volkswagen,Tayron,2.0 TSI,Petrol,Automatic,0.0,1474200,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1518800,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1507600,2026.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,0.0,878000,2026.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,0.0,880000,2026.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,0.0,922000,2026.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,0.0,925000,2026.0,autojarov
+Volkswagen,T-Roc,1.5 ETSI,Petrol,Automatic,0.0,1054600,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1511700,2026.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,5000.0,1015000,2025.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,0.0,590000,2026.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,12000.0,585000,2026.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,0.0,586000,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,29800.0,634000,2024.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,42863.0,454000,2024.0,autojarov
+Peugeot,Expert,2.0 BLUE,Diesel,Automatic,148667.0,599000,2018.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,0.0,784800,2026.0,autojarov
+Audi,A3,,Petrol,Automatic,18147.0,739000,2025.0,autojarov
+Škoda,SCALA,1.5 TSI,Petrol,Automatic,25734.0,549000,2024.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,20394.0,1094000,2024.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,0.0,610000,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,85039.0,469900,2022.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,124454.0,329900,2023.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,122163.0,364000,2022.0,autojarov
+Volkswagen,T-Roc,2.0 TDI,Diesel,Manual,90021.0,409000,2022.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Manual,42446.0,419000,2021.0,autojarov
+CUPRA,Formentor,2.0 TSI,Petrol,Automatic,0.0,1029900,2026.0,autojarov
+Škoda,SCALA,1.6 TDI,Diesel,Manual,142382.0,239000,2019.0,autojarov
+Volkswagen,Touran,2.0 TDI,Diesel,Automatic,161302.0,409000,2020.0,autojarov
+Audi,Q7,,Diesel,Automatic,57602.0,1159900,2020.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,36098.0,559000,2024.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,22129.0,549000,2024.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,88140.0,329000,2022.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,104595.0,529900,2023.0,autojarov
+Audi,Q7,3.0 TDI,Diesel,Automatic,74672.0,899900,2018.0,autojarov
+Volkswagen,TIGUAN,1.5 TSI,Petrol,Automatic,67823.0,574900,2020.0,autojarov
+Audi,Q3,,Petrol,Automatic,0.0,1599900,2026.0,autojarov
+CUPRA,LEON,2.0 TSI,Petrol,Automatic,21525.0,799000,2023.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,172614.0,459000,2020.0,autojarov
+Audi,A6,,Hybrid,Automatic,177359.0,539900,2020.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,89470.0,314000,2022.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,31969.0,824000,2024.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,0.0,1079900,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,0.0,595200,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,624800,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,0.0,751300,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,0.0,675000,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,0.0,789700,2026.0,autojarov
+Audi,Q7,,Diesel,Automatic,115141.0,1199900,2020.0,autojarov
+Audi,Q3,,Petrol,Automatic,0.0,1439000,2026.0,autojarov
+Audi,Q3,,Petrol,Automatic,0.0,1599000,2026.0,autojarov
+Audi,Q3,,Petrol,Automatic,0.0,1679000,2026.0,autojarov
+Audi,Q3,,Petrol,Automatic,0.0,1179000,2026.0,autojarov
+Audi,Q3,,Petrol,Automatic,5000.0,1499000,2026.0,autojarov
+Audi,Q3,,Petrol,Automatic,0.0,1619000,2026.0,autojarov
+Audi,Q3,2.0 TDI,Diesel,Manual,64610.0,619000,2020.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,0.0,859000,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,0.0,835000,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,42972.0,579000,2023.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,845000,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,0.0,879000,2026.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Automatic,0.0,744700,2026.0,autojarov
+Škoda,KAROQ,2.0 TDI,Diesel,Automatic,0.0,995000,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Automatic,0.0,529800,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Automatic,0.0,505000,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,0.0,475200,2026.0,autojarov
+Škoda,FABIA,1.0 MPI,Petrol,Manual,0.0,399000,2026.0,autojarov
+Škoda,FABIA,1.0 MPI,Petrol,Manual,0.0,411300,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1151900,2026.0,autojarov
+Audi,Q5,,Diesel,Automatic,65856.0,879900,2022.0,autojarov
+SEAT,ARONA,1.0 TSI,Petrol,Manual,28899.0,399000,2022.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,0.0,539900,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,599900,2026.0,autojarov
+SEAT,Leon,1.5 ETSI,Petrol,Automatic,26734.0,539900,2023.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,30408.0,614000,2024.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Automatic,24328.0,609900,2024.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,31291.0,459000,2024.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1119900,2026.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1159900,2026.0,autojarov
+Škoda,KODIAQ,1.5 TSI,Petrol,Automatic,23322.0,779000,2022.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,16856.0,689000,2024.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,27493.0,599000,2024.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Manual,38494.0,349000,2022.0,autojarov
+Audi,Q3,,Diesel,Automatic,12834.0,1139900,2024.0,autojarov
+Audi,A4,,Diesel,Automatic,14852.0,1039900,2024.0,autojarov
+Audi,A1,,Petrol,Automatic,0.0,1019000,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,92424.0,554000,2022.0,autojarov
+Renault,KADJAR,1.5 DCI,Diesel,Automatic,124910.0,239000,2016.0,autojarov
+Škoda,OCTAVIA,1.0 TSI,Petrol,Automatic,132500.0,384000,2021.0,autojarov
+SEAT,Leon,1.5 ETSI,Petrol,Automatic,69305.0,509000,2022.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,40400.0,1039900,2024.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,31950.0,595000,2024.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1254000,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1449900,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1407200,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1379900,2026.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,20405.0,849900,2024.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,30165.0,619900,2024.0,autojarov
+Škoda,SUPERB,2.0 TSI,Petrol,Automatic,30621.0,959900,2024.0,autojarov
+Volkswagen,Tiguan,1.5 TSI,Petrol,Automatic,36155.0,709900,2023.0,autojarov
+CUPRA,Ateca,2.0 TSI,Petrol,Automatic,0.0,929900,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,4831.0,569900,2024.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,19702.0,609900,2024.0,autojarov
+Škoda,SCALA,1.0 TSI,Petrol,Automatic,17295.0,414000,2020.0,autojarov
+Volkswagen,Polo,1.0 TSI,Petrol,Manual,0.0,496900,2026.0,autojarov
+Audi,A6,,Diesel,Automatic,135319.0,759900,2021.0,autojarov
+Škoda,KAROQ,2.0 TDI,Diesel,Manual,0.0,887900,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,579900,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Manual,0.0,549900,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,0.0,749000,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,79738.0,555000,2019.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,56253.0,439000,2022.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Manual,169815.0,469000,2021.0,autojarov
+Volkswagen,Passat,1.5 TSI,Petrol,Manual,47380.0,509000,2022.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,27940.0,619900,2024.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,24545.0,569900,2024.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,16810.0,974000,2024.0,autojarov
+SEAT,Leon,1.5 ETSI,Petrol,Automatic,22709.0,599900,2024.0,autojarov
+SEAT,Leon,1.5 TSI,Petrol,Manual,173485.0,289900,2020.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,0.0,749000,2026.0,autojarov
+CUPRA,Ateca,2.0 TSI,Petrol,Automatic,5000.0,879900,2025.0,autojarov
+Volkswagen,PASSAT,2.0 TDI,Diesel,Automatic,135823.0,479900,2021.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,0.0,519000,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Automatic,0.0,549000,2026.0,autojarov
+Škoda,OCTAVIA,1.5 TSI,Petrol,Manual,14022.0,639900,2024.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,30050.0,629900,2024.0,autojarov
+Volkswagen,Allspace,2.0 TDI,Diesel,Automatic,74766.0,798000,2023.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,117373.0,709900,2022.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,13610.0,829000,2024.0,autojarov
+Volkswagen,PASSAT,2.0 TDI,Diesel,Automatic,136984.0,479900,2021.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,0.0,1102900,2026.0,autojarov
+Audi,Q3,,Diesel,Automatic,5000.0,1199000,2025.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,40450.0,554900,2023.0,autojarov
+Volkswagen,ID.,,Electric,Automatic,0.0,1049900,2026.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,20027.0,684000,2022.0,autojarov
+Volkswagen,Golf,2.0 TSI,Petrol,Automatic,8700.0,999900,2025.0,autojarov
+Škoda,Kodiaq,2.0 TDI,Diesel,Automatic,31360.0,1174900,2024.0,autojarov
+Audi,A5,,Diesel,Automatic,0.0,1479000,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,181445.0,349000,2021.0,autojarov
+Volkswagen,Tiguan,2.0 TSI,Petrol,Automatic,109042.0,639900,2022.0,autojarov
+Audi,A1,,Petrol,Manual,0.0,619000,2026.0,autojarov
+Audi,Q2,,Petrol,Automatic,1000.0,899000,2025.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,77009.0,639000,2022.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,25813.0,955000,2024.0,autojarov
+SEAT,Leon,2.0 TDI,Diesel,Automatic,162863.0,369000,2022.0,autojarov
+Audi,A6,,Diesel,Automatic,72496.0,849900,2020.0,autojarov
+Audi,A6,,Diesel,Automatic,6593.0,1739900,2024.0,autojarov
+Škoda,SUPERB,1.4 TSI,Hybrid,Automatic,123827.0,464000,2021.0,autojarov
+CUPRA,Formentor,1.5 ETSI,Hybrid,Automatic,0.0,829900,2026.0,autojarov
+CUPRA,Formentor,1.5 ETSI,Hybrid,Automatic,0.0,839900,2026.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,0.0,1429900,2026.0,autojarov
+CUPRA,FORMENTOR,2.0 TSI,Petrol,Automatic,45959.0,674000,2023.0,autojarov
+Audi,A6,,Petrol,Automatic,96841.0,969900,2022.0,autojarov
+Audi,Q3,,Diesel,Automatic,0.0,1144900,2026.0,autojarov
+Audi,Q3,,Diesel,Automatic,0.0,1189900,2026.0,autojarov
+Volkswagen Užitkové vozy,Entry,2.0 TDI,Diesel,Manual,0.0,1236154,2026.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,37912.0,519900,2020.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,0.0,479900,2026.0,autojarov
+Audi,Q3,,Diesel,Automatic,0.0,1219000,2026.0,autojarov
+Audi,A6,,Diesel,Automatic,65075.0,799900,2021.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TSI,Petrol,Automatic,0.0,1669900,2026.0,autojarov
+CUPRA,Terramar,2.0 TSI,Petrol,Automatic,0.0,913900,2026.0,autojarov
+Audi,A6,,Diesel,Automatic,12399.0,1699900,2024.0,autojarov
+Volkswagen Užitkové vozy,Nový,2.0 TDI,Diesel,Manual,0.0,1088887,2026.0,autojarov
+Volkswagen Užitkové vozy,Entry,2.0 TDI,Diesel,Manual,0.0,1280197,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,1.5 TSI,Hybrid,Automatic,0.0,1649000,2026.0,autojarov
+Volkswagen,TIGUAN,2.0 TDI,Diesel,Automatic,170563.0,529900,2022.0,autojarov
+Audi,Q5,,Petrol,Automatic,0.0,1379000,2026.0,autojarov
+Audi,A6,,Diesel,Automatic,27869.0,1369900,2024.0,autojarov
+Audi,Q5,,Diesel,Automatic,0.0,1399000,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,0.0,950700,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Automatic,0.0,935900,2026.0,autojarov
+Volkswagen,Passat,1.5 TSI,Petrol,Manual,48768.0,484000,2022.0,autojarov
+CUPRA,Leon,2.0 TSI,Petrol,Automatic,5000.0,879900,2025.0,autojarov
+Audi,Q3,,Diesel,Automatic,33613.0,879900,2022.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Automatic,0.0,692100,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,635800,2026.0,autojarov
+Škoda,KAMIQ,1.0 TSI,Petrol,Automatic,0.0,641700,2026.0,autojarov
+Škoda,KAMIQ,1.5 TSI,Petrol,Automatic,0.0,705700,2026.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,29808.0,809000,2024.0,autojarov
+Audi,A6,,Petrol,Automatic,134607.0,949900,2021.0,autojarov
+Audi,A6,,Diesel,Automatic,62143.0,949900,2022.0,autojarov
+Volkswagen Užitkové vozy,Multivan,2.0 TDI,Diesel,Automatic,0.0,1499900,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TDI,Diesel,Manual,27972.0,549900,2024.0,autojarov
+Audi,A5,,Petrol,Automatic,0.0,999000,2026.0,autojarov
+Volkswagen,TOUAREG,3.0 TDI,Diesel,Automatic,75317.0,1299900,2021.0,autojarov
+Volkswagen,ARTEON,2.0 TSI,Petrol,Automatic,83035.0,554000,2020.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1088000,2026.0,autojarov
+Audi,A3,,Petrol,Automatic,0.0,839000,2026.0,autojarov
+Audi,A3,,Petrol,Automatic,0.0,829000,2026.0,autojarov
+Audi,Q3,,Diesel,Automatic,0.0,1119900,2026.0,autojarov
+Volkswagen,Allspace,2.0 TDI,Diesel,Automatic,148808.0,439000,2019.0,autojarov
+Audi,A6,,Diesel,Automatic,26366.0,1369900,2024.0,autojarov
+Audi,Q3,,Diesel,Automatic,0.0,1139900,2026.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,139412.0,589900,2020.0,autojarov
+CUPRA,Formentor,1.5 TSI,Petrol,Manual,25306.0,649900,2023.0,autojarov
+CUPRA,Formentor,1.5 ETSI,Hybrid,Automatic,10000.0,889900,2026.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,0.0,939100,2026.0,autojarov
+Audi,A3,,Petrol,Automatic,0.0,799000,2026.0,autojarov
+Volkswagen,Tayron,2.0 TSI,Petrol,Automatic,0.0,1606700,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1689600,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,12000.0,1410000,2026.0,autojarov
+Volkswagen,Taigo,1.0 TSI,Petrol,Automatic,0.0,599900,2026.0,autojarov
+Volkswagen,Tayron,1.5 TSI,Hybrid,Automatic,0.0,1225900,2026.0,autojarov
+Audi,A6,,Diesel,Automatic,0.0,1779900,2026.0,autojarov
+Volkswagen,Golf,1.5 TSI,Petrol,Manual,0.0,608000,2026.0,autojarov
+Volkswagen,Golf,1.5 TSI,Petrol,Manual,12000.0,608000,2026.0,autojarov
+Škoda,SUPERB,2.0 TDI,Diesel,Automatic,0.0,1109900,2026.0,autojarov
+Volkswagen,Golf,1.5 ETSI,Petrol,Automatic,0.0,887400,2026.0,autojarov
+Volkswagen,Touran,1.5 TSI,Petrol,Automatic,7000.0,840000,2025.0,autojarov
+Volkswagen,Touran,1.5 TSI,Petrol,Automatic,0.0,880000,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1083000,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1079000,2026.0,autojarov
+Audi,A6,,Diesel,Automatic,27079.0,1399900,2024.0,autojarov
+Audi,A5,,Diesel,Automatic,0.0,1469000,2026.0,autojarov
+Audi,S5,,Petrol,Automatic,28523.0,1244900,2022.0,autojarov
+Škoda,KAROQ,1.5 TSI,Petrol,Automatic,64264.0,669900,2022.0,autojarov
+Audi,A6,,Diesel,Automatic,20807.0,1289900,2024.0,autojarov
+Audi,A6,,Diesel,Automatic,29864.0,1149900,2024.0,autojarov
+Škoda,KODIAQ,2.0 TDI,Diesel,Automatic,95296.0,619900,2022.0,autojarov
+Audi,A6,,Diesel,Automatic,28182.0,1349900,2024.0,autojarov
+Audi,S6,,Diesel,Automatic,12208.0,1649900,2024.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,0.0,459500,2026.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,0.0,1182000,2026.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,0.0,1186000,2026.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,0.0,966000,2026.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,0.0,970000,2026.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,0.0,1165000,2026.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,0.0,1169000,2026.0,autojarov
+Škoda,OCTAVIA,2.0 TSI,Petrol,Automatic,0.0,1155700,2026.0,autojarov
+Audi,A6,,Diesel,Automatic,19794.0,1189900,2023.0,autojarov
+Volkswagen,Polo,1.0 TSI,Petrol,Manual,0.0,493900,2026.0,autojarov
+Volkswagen,Polo,1.0 TSI,Petrol,Manual,0.0,477900,2026.0,autojarov
+Audi,SQ5,,Diesel,Automatic,29341.0,1099900,2022.0,autojarov
+Audi,Q5,,Diesel,Automatic,0.0,1699000,2026.0,autojarov
+CUPRA,FORMENTOR,2.0 TSI,Petrol,Automatic,48065.0,629900,2023.0,autojarov
+Audi,Q5,,Diesel,Automatic,0.0,1839000,2026.0,autojarov
+Audi,A5,,Diesel,Automatic,0.0,1649000,2026.0,autojarov
+Audi,A6,,Diesel,Automatic,0.0,1589000,2026.0,autojarov
+Audi,A3,,Petrol,Automatic,1000.0,979000,2026.0,autojarov
+Audi,Q2,,Petrol,Automatic,0.0,969000,2026.0,autojarov
+Volkswagen,Polo,1.0 TSI,Petrol,Manual,0.0,499900,2026.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Manual,5000.0,499000,2025.0,autojarov
+Volkswagen,Polo,1.0 TSI,Petrol,Manual,7000.0,480000,2025.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1525000,2026.0,autojarov
+Volkswagen,Tayron,2.0 TDI,Diesel,Automatic,0.0,1772900,2026.0,autojarov
+Volkswagen,Tayron,1.5 ETSI,Petrol,Automatic,0.0,999000,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,,Diesel,Manual,0.0,1043357,2026.0,autojarov
+Audi,Q3,,Diesel,Automatic,0.0,1249900,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TDI,Diesel,Manual,0.0,846471,2025.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TDI,Diesel,Automatic,0.0,1369000,2025.0,autojarov
+Volkswagen,T-Cross,1.0 TSI,Petrol,Automatic,0.0,596900,2025.0,autojarov
+Audi,Q5,,Diesel,Automatic,0.0,1799000,2026.0,autojarov
+Audi,Q3,,Diesel,Automatic,0.0,1259000,2026.0,autojarov
+Škoda,FABIA,1.0 TSI,Petrol,Manual,0.0,524900,2026.0,autojarov
+Volkswagen Užitkové vozy,Akční,2.0 TDI,Diesel,Automatic,0.0,1546900,2026.0,autojarov
+SEAT,Leon,,Hybrid,Automatic,10000.0,819900,2024.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,0.0,1025000,2026.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,0.0,1059000,2026.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,0.0,1085000,2026.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,0.0,1089000,2026.0,autojarov
+Volkswagen,Tiguan,1.5 ETSI,Petrol,Automatic,0.0,1109000,2026.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,0.0,1313000,2026.0,autojarov
+Volkswagen,Tiguan,2.0 TDI,Diesel,Automatic,0.0,1611500,2026.0,autojarov
+Volkswagen,Tiguan,2.0 TSI,Petrol,Automatic,0.0,1246000,2026.0,autojarov
+Volkswagen,Golf,1.5 TSI,Petrol,Manual,0.0,686000,2026.0,autojarov
+Volkswagen,Golf,1.5 TSI,Petrol,Manual,0.0,806100,2026.0,autojarov
+Volkswagen,Golf,1.5 TSI,Petrol,Manual,5000.0,599000,2025.0,autojarov
+Volkswagen,Passat,2.0 TDI,Diesel,Automatic,5000.0,1040000,2026.0,autojarov
+CUPRA,Terramar,1.5 ETSI,Petrol,Automatic,5000.0,939900,2026.0,autojarov
+Audi,A5,,Diesel,Automatic,6000.0,1469000,2025.0,autojarov
+Audi,Q5,,Diesel,Automatic,0.0,1729900,2026.0,autojarov
+Audi,Q3,,Diesel,Automatic,0.0,1229000,2026.0,autojarov
+CUPRA,Formentor,1.5 ETSI,Hybrid,Automatic,7500.0,859900,2024.0,autojarov
+Volkswagen Užitkové vozy,California,6.1 BEACH,Diesel,Automatic,9000.0,1619900,2024.0,autojarov
+Škoda,"Kodiaq,",,Diesel,Automatic,29915.0,1120000,2024.0,aaaauto
+Volkswagen,"Passat,",,Diesel,Automatic,134628.0,290000,2018.0,aaaauto
+Škoda,"Superb,",,Diesel,Automatic,161212.0,470000,2019.0,aaaauto
+BMW,"X5,",,Diesel,Automatic,166344.0,510000,2017.0,aaaauto
+Škoda,"Kodiaq,",,Diesel,Automatic,181756.0,440000,2019.0,aaaauto
+Škoda,"Kodiaq,",,Diesel,Automatic,159948.0,430000,2019.0,aaaauto
+Hyundai,"Tucson,",,Diesel,Manual,139842.0,230000,2016.0,aaaauto
+Škoda,"Karoq,",,Petrol,Automatic,163126.0,430000,2022.0,aaaauto
+Kia,"Sportage,",,Diesel,Manual,164777.0,150000,2013.0,aaaauto
+Seat,"Leon,",,Diesel,Automatic,119894.0,230000,2020.0,aaaauto
+Tesla,Model,,,Automatic,448.0,480000,2021.0,aaaauto
+Škoda,"Kodiaq,",,Diesel,Automatic,146402.0,650000,2019.0,aaaauto
+BMW,"X3,",,Diesel,Automatic,161663.0,350000,2016.0,aaaauto
+Audi,"A6,",,Diesel,Automatic,86265.0,280000,2013.0,aaaauto
+Škoda,"Kodiaq,",,Diesel,Automatic,146040.0,440000,2017.0,aaaauto
+Škoda,"Kodiaq,",,Diesel,Automatic,189482.0,590000,2020.0,aaaauto
+Volkswagen,"Passat,",,Diesel,Automatic,167694.0,350000,2018.0,aaaauto
+Opel,"Vivaro,",,Diesel,Manual,82219.0,510000,2022.0,aaaauto
+Ford,"S-Max,",,Diesel,Manual,122634.0,210000,2017.0,aaaauto
+Volkswagen,"Arteon,",,Petrol,Automatic,97023.0,360000,2018.0,aaaauto
+Volkswagen,"Tiguan,",,Diesel,Automatic,177734.0,340000,2017.0,aaaauto
+Škoda,"Superb,",,Diesel,Automatic,107755.0,390000,2019.0,aaaauto
+Hyundai,"Tucson,",,Petrol,Manual,153756.0,260000,2018.0,aaaauto
+Hyundai,"Tucson,",,Petrol,Manual,110296.0,360000,2019.0,aaaauto
+Škoda,"Octavia,",,Diesel,Automatic,86729.0,430000,2022.0,aaaauto
+Toyota,"RAV4,",,Diesel,Manual,123574.0,310000,2016.0,aaaauto
+Kia,"Sportage,",,,Manual,100955.0,200000,2015.0,aaaauto
+Ford,"Mondeo,",,Diesel,Manual,153400.0,200000,2016.0,aaaauto
+Škoda,"Octavia,",,Diesel,Manual,124318.0,230000,2018.0,aaaauto
+Dacia,"Duster,",,,Manual,80854.0,230000,2022.0,aaaauto

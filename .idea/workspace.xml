@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="inti">
-      <change afterPath="$PROJECT_DIR$/scraper/AAAAutoScraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraper/AutoJarovScraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraper/BasicSraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraper/scraper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/data_saver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/AutoCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AutoCalculator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/autojarov_cars.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data_cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_cleaner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper/scrape_autojarov.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/AAAAutoScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/aaautoScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/AutoJarovScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/autoJarovScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/BasicSraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/BasicSraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/scraper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.BasicSraper.executor": "Run",
+    "Python.data_cleaner.executor": "Run",
     "Python.scrape_autojarov.executor": "Run",
+    "Python.scraper.executor": "Run",
     "Python.trainer.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -69,6 +74,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Uživatel\PycharmProjects\AutoCalculator\scrapper" />
       <recent name="C:\Users\Uživatel\PycharmProjects\AutoCalculator" />
     </key>
   </component>

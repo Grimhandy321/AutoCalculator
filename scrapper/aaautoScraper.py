@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-from base_scraper import BaseScraper
+from scrapper.BasicSraper import BaseScraper
 
 
 def extract_engine_type(text: str):
@@ -25,7 +25,7 @@ def extract_engine_type(text: str):
 
 class AAAAutoScraper(BaseScraper):
 
-    BASE_URL = "https://www.aaaauto.cz/cz/inzerce/osobni-vozy/?page="
+    BASE_URL = "https://www.aaaauto.cz/ojete-vozy/#!&page="
     HEADERS = {
         "User-Agent": "Mozilla/5.0"
     }

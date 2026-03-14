@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re
 from datetime import datetime
 
-from base_scraper import BaseScraper
+from scrapper.BasicSraper import BaseScraper
 
 
 def extract_engine_type(text: str):

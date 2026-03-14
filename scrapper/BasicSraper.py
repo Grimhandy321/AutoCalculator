@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 import time
-from saver import save_progress
+from data_saver import save_progress
 
 
 class BaseScraper(ABC):
