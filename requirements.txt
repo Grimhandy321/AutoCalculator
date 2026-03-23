@@ -1,0 +1,9 @@
+pandas
+numpy
+requests
+beautifulsoup4
+scikit-learn
+xgboost
+torch
+torchvision
+tqdm
