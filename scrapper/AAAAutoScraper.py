@@ -4,22 +4,28 @@ import re
 import json
 import os
 
-
-
-
 def extract_engine_type(text: str):
     if not text:
         return None
-
     text = text.replace(",", ".")
-
     # matches: 2.0 TDI, 1.5 TSI, 3.0 V6, etc.
     match = re.search(r"\b\d\.\d\s*(TSI|TDI|MPI|HDI|CDI|GDI|ECOBOOST|V\d)\b", text, re.IGNORECASE)
-
     if match:
         return match.group(0).upper()
-
     return None
+
+def extract_transmission(car_soup):
+    """
+    Extract transmission type from car soup. Returns 'Automatic' or 'Manual'.
+    """
+    tags_ul = car_soup.select_one("ul.columnsTags")
+    if not tags_ul:
+        return None
+    tags = [li.get_text(strip=True) for li in tags_ul.select("li.tag")]
+    for tag in tags:
+        if "automat" in tag.lower():
+            return "Automatic"
+    return "Manual"
 
 class AAAAutoScraper():
 
@@ -91,10 +97,13 @@ class AAAAutoScraper():
                     if len(images) >= 5:
                         break
 
+                transmission = extract_transmission(car)
+
                 record = {
                     "brand": brand,
                     "model": model,
                     "engine_type": engine_type,
+                    "transmission": transmission,
                     "price": price,
                     "year": year,
                     "images": images[:5],

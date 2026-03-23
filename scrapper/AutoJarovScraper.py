@@ -5,18 +5,47 @@ import json
 import os
 from datetime import datetime
 
-
-
-
 def extract_engine_type(text: str):
+    """
+    Extract engine type from the car title, e.g., 1.9 TDI, 1.5 TSI.
+    """
     if not text:
         return None
     text = text.replace(",", ".")
     match = re.search(r"\d\.\d\s*[A-Za-z]+", text)
     return match.group(0).upper() if match else None
 
+def extract_transmission(car_soup):
+    """
+    Returns 'Automatic' or 'Manual'.
+    """
+    params_ul = car_soup.select_one("ul.parameters")
+    if not params_ul:
+        return None
+    params = [li.get_text(strip=True).lower() for li in params_ul.select("li")]
+    for param in params:
+        if "automat" in param:
+            return "Automatic"
+    return "Manual"
 
-class AutoJarovScraper():
+def extract_fuel_type(car_soup):
+    """
+    Returns 'Petrol', 'Diesel', 'Hybrid', or None if not found.
+    """
+    params_ul = car_soup.select_one("ul.parameters")
+    if not params_ul:
+        return None
+    params = [li.get_text(strip=True).lower() for li in params_ul.select("li")]
+    for param in params:
+        if "benzín" in param:
+            return "Petrol"
+        if "nafta" in param:
+            return "Diesel"
+        if "hybrid" in param:
+            return "Hybrid"
+    return None
+
+class AutoJarovScraper:
 
     BASE_URL = "https://www.autojarov.cz/nabidka-vozu/"
     DOMAIN = "https://www.autojarov.cz"
@@ -62,7 +91,6 @@ class AutoJarovScraper():
                 full_title = h4.find("b").get_text(strip=True)
 
                 engine_type = extract_engine_type(full_title)
-
                 model = full_title
                 if engine_type:
                     model = model.replace(engine_type.replace(".", ","), "")
@@ -81,10 +109,15 @@ class AutoJarovScraper():
                     if len(images) >= 5:
                         break
 
+                transmission = extract_transmission(car)
+                fuel_type = extract_fuel_type(car)
+
                 record = {
                     "brand": brand,
                     "model": model,
                     "engine_type": engine_type,
+                    "transmission": transmission,
+                    "fuel_type": fuel_type,
                     "price": price,
                     "images": images[:5],
                     "source": "autojarov"
@@ -104,3 +137,4 @@ class AutoJarovScraper():
             self._save_partial(buffer, save_path)
 
         return page_records
+

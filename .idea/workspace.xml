@@ -4,28 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="inti">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline/dataset_cleaning.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline/download_images.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_scrapers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapper/AutoJarovScraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/training/train_xgboost.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cars_cleaned.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cars_dataset.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_cleaner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/trainer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/BasicSraper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/aaautoScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/AAAAutoScraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/autoJarovScraper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/data_saver.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/scraper.py" beforeDir="false" />
+    <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="image scraping">
+      <change beforePath="$PROJECT_DIR$/scrapper/AAAAutoScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/AAAAutoScraper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773482050126</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="image scraping">
+      <option name="closed" value="true" />
+      <created>1774280164766</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1774280164766</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +133,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inti" />
-    <option name="LAST_COMMIT_MESSAGE" value="inti" />
+    <MESSAGE value="image scraping" />
+    <option name="LAST_COMMIT_MESSAGE" value="image scraping" />
   </component>
 </project>
