@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="image scraping">
-      <change afterPath="$PROJECT_DIR$/scrapper/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapper/utils/fetch_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapper/utils/image_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapper/utils/text_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/cars.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw/cars.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run_scrapers.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_scrapers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapper/AutoJarovScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/AutoJarovScraper.py" afterDir="false" />
     </list>
@@ -53,7 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.AutoJarovScraper.executor": "Debug",
+    "Python.AutoJarovScraper.executor": "Run",
     "Python.BasicSraper.executor": "Run",
     "Python.data_cleaner.executor": "Run",
     "Python.run_scrapers.executor": "Run",
@@ -130,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774280643553</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="image scraping">
+      <option name="closed" value="true" />
+      <created>1774538821162</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1774538821162</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,16 +155,5 @@
     <MESSAGE value="inti" />
     <MESSAGE value="image scraping" />
     <option name="LAST_COMMIT_MESSAGE" value="image scraping" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scrapper/AutoJarovScraper.py</url>
-          <line>118</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

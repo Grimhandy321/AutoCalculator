@@ -66,7 +66,7 @@ def scraper_worker(scraper, all_data, total_counter, data_lock, stop_event):
 
 def run():
     scrapers = [
-       ## AAAAutoScraper(),
+        AAAAutoScraper(),
         AutoJarovScraper()
     ]
 

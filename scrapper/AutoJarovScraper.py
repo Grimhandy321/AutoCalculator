@@ -31,8 +31,6 @@ class AutoJarovScraper:
             timeout=20,
             retries=3,
             backoff=2,
-            min_delay=0.2,
-            max_delay=0.7
         )
         if not response:
             print(f"[AutoJarov] Failed detail page {detail_url}")
