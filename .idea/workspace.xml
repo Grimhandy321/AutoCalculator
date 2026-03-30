@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="data">
-      <change afterPath="$PROJECT_DIR$/pipeline/2_download_images_parallel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline/4_generate_vision_predictions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapper/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapper/bazos_scraper_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw/cars.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/dataset_cleaning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/download_images.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/AAAAutoScraper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/AutoJarovScraper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/1_prepare_labels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/utils/fetch_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/utils/image_extractor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/utils/text_utils.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774539872346</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="data">
+      <option name="closed" value="true" />
+      <created>1774890346244</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1774890346244</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
