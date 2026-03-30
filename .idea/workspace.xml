@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="image scraping">
-      <change afterPath="$PROJECT_DIR$/data/raw/cars.json" afterDir="false" />
+    <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="data">
+      <change afterPath="$PROJECT_DIR$/pipeline/2_download_images_parallel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/4_generate_vision_predictions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/bazos_scraper_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_scrapers.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_scrapers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/AutoJarovScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/AutoJarovScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/raw/cars.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/dataset_cleaning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/download_images.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/AAAAutoScraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/AutoJarovScraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/1_prepare_labels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/utils/fetch_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/utils/image_extractor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/utils/text_utils.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +63,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.AutoJarovScraper.executor": "Run",
     "Python.BasicSraper.executor": "Run",
+    "Python.bazos_scraper_v2.executor": "Run",
     "Python.data_cleaner.executor": "Run",
     "Python.run_scrapers.executor": "Run",
     "Python.scrape_autojarov.executor": "Run",
@@ -77,6 +90,35 @@
       <recent name="C:\Users\Uživatel\PycharmProjects\AutoCalculator\scrapper" />
       <recent name="C:\Users\Uživatel\PycharmProjects\AutoCalculator" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="bazos_scraper_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AutoCalculator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapper/bazos_scraper_v2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.bazos_scraper_v2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -134,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774538821162</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="data">
+      <option name="closed" value="true" />
+      <created>1774539872346</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1774539872346</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +204,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inti" />
     <MESSAGE value="image scraping" />
-    <option name="LAST_COMMIT_MESSAGE" value="image scraping" />
+    <MESSAGE value="data" />
+    <option name="LAST_COMMIT_MESSAGE" value="data" />
   </component>
 </project>
