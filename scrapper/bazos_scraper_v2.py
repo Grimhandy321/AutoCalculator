@@ -9,7 +9,7 @@ import requests
 from bs4 import BeautifulSoup
 
 BASE_URL = "https://auto.bazos.cz/"
-TARGET_COUNT = 20_0000
+TARGET_COUNT = 200_0000
 OUTPUT_CSV = "../data/bazos_cars_10k.csv"
 SEEN_IDS_FILE = "../data/seen_ids.txt"
 FAILED_URLS_FILE = "../data/failed_urls.txt"
@@ -73,7 +73,7 @@ session.headers.update(HEADERS)
 # Helpers
 # -----------------------------
 def sleep():
-    time.sleep(random.uniform(0.1, 0.25))
+    time.sleep(random.uniform(0.01, 0.05))
 
 
 def fetch(url):

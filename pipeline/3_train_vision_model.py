@@ -24,6 +24,7 @@ os.makedirs(MODEL_DIR, exist_ok=True)
 df = pd.read_csv(CSV_FILE)
 df["listing_id"] = df["listing_id"].astype(str)
 
+
 def find_image_path(listing_id):
     for ext in [".jpg", ".jpeg", ".png", ".webp"]:
         path = os.path.join(IMAGE_DIR, f"{listing_id}{ext}")
@@ -31,8 +32,9 @@ def find_image_path(listing_id):
             return path
     return None
 
+
 df["image_path"] = df["listing_id"].apply(find_image_path)
-df = df.dropna(subset=["image_path", "brand", "model", "condition"]).reset_index(drop=True)
+df = df.dropna(subset=["image_path", "brand", "model_extracted", "condition"]).reset_index(drop=True)
 
 print("Usable rows:", len(df))
 
@@ -42,7 +44,7 @@ model_le = LabelEncoder()
 condition_le = LabelEncoder()
 
 df["brand_enc"] = brand_le.fit_transform(df["brand"])
-df["model_enc"] = model_le.fit_transform(df["model"])
+df["model_enc"] = model_le.fit_transform(df["model_extracted"])
 df["condition_enc"] = condition_le.fit_transform(df["condition"])
 
 np.save(os.path.join(MODEL_DIR, "brand_classes.npy"), brand_le.classes_)
@@ -51,11 +53,13 @@ np.save(os.path.join(MODEL_DIR, "condition_classes.npy"), condition_le.classes_)
 
 train_df, val_df = train_test_split(df, test_size=0.2, random_state=42)
 
+
 def load_image(path):
     img = load_img(path, target_size=IMG_SIZE)
     img = img_to_array(img)
     img = preprocess_input(img)
     return img
+
 
 def data_generator(dataframe, batch_size=BATCH_SIZE, shuffle=True):
     while True:
@@ -63,7 +67,7 @@ def data_generator(dataframe, batch_size=BATCH_SIZE, shuffle=True):
             dataframe = dataframe.sample(frac=1).reset_index(drop=True)
 
         for i in range(0, len(dataframe), batch_size):
-            batch = dataframe.iloc[i:i+batch_size]
+            batch = dataframe.iloc[i:i + batch_size]
 
             images = []
             brand_y = []
@@ -92,6 +96,7 @@ def data_generator(dataframe, batch_size=BATCH_SIZE, shuffle=True):
                 }
             )
 
+
 base_model = EfficientNetB0(
     weights="imagenet",
     include_top=False,
@@ -117,7 +122,11 @@ model.compile(
         "model_output": "sparse_categorical_crossentropy",
         "condition_output": "sparse_categorical_crossentropy"
     },
-    metrics=["accuracy"]
+    metrics={
+        "brand_output": ["accuracy"],
+        "model_output": ["accuracy"],
+        "condition_output": ["accuracy"]
+    }
 )
 
 callbacks = [
@@ -128,8 +137,8 @@ callbacks = [
 model.fit(
     data_generator(train_df),
     validation_data=data_generator(val_df, shuffle=False),
-    steps_per_epoch=max(1, len(train_df)//BATCH_SIZE),
-    validation_steps=max(1, len(val_df)//BATCH_SIZE),
+    steps_per_epoch=max(1, len(train_df) // BATCH_SIZE),
+    validation_steps=max(1, len(val_df) // BATCH_SIZE),
     epochs=EPOCHS,
     callbacks=callbacks,
     verbose=1

@@ -1,14 +1,14 @@
 import re
 import pandas as pd
 
+from pipeline.utils.car_title_parser import clean_car_columns
+
 CSV_FILE = "../data/bazos_cars_10k.csv"
 OUTPUT_FILE = "../data/bazos_cars_labeled.csv"
 
 df = pd.read_csv(CSV_FILE)
 
-# -----------------------------
-# Basic cleaning
-# -----------------------------
+
 for col in ["title", "description", "brand", "model"]:
     if col not in df.columns:
         df[col] = ""
@@ -19,9 +19,6 @@ df["year"] = pd.to_numeric(df.get("year", None), errors="coerce")
 df["mileage_km"] = pd.to_numeric(df.get("mileage_km", None), errors="coerce")
 df["power_kw"] = pd.to_numeric(df.get("power_kw", None), errors="coerce")
 
-# -----------------------------
-# Normalize brand/model
-# -----------------------------
 def clean_text(s):
     s = str(s).strip()
     s = re.sub(r"\s+", " ", s)
@@ -47,9 +44,6 @@ def infer_brand_model(row):
 
 df[["brand", "model"]] = df.apply(infer_brand_model, axis=1)
 
-# -----------------------------
-# Heuristic condition labels
-# -----------------------------
 excellent_kw = [
     "top stav", "perfektní", "jako nové", "jako nova", "bez investic",
     "garážované", "garazovane", "nehavarované", "nehavarovane",
@@ -95,19 +89,19 @@ df["condition"] = (df["title"] + " " + df["description"]).apply(infer_condition)
 # Keep useful rows
 # -----------------------------
 df = df.dropna(subset=["listing_id", "price_czk"])
+
 df = df[df["price_czk"] > 10000]
 df = df[df["price_czk"] < 5000000]
-
+df = clean_car_columns(df, title_col="title", model_col="model")
 # keep top common brands/models to avoid garbage classes
+model_counts = df["model_extracted"].value_counts()
 top_brands = df["brand"].value_counts().head(20).index
-df = df[df["brand"].isin(top_brands)]
-
-# keep only reasonably frequent models
-model_counts = df["model"].value_counts()
 valid_models = model_counts[model_counts >= 20].index
-df = df[df["model"].isin(valid_models)]
+
+print(valid_models)
+df = df[df["brand"].isin(top_brands)]
 
 df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8-sig")
 print(f"Saved labeled data: {OUTPUT_FILE}")
 print("Rows:", len(df))
-print(df[["brand", "model", "condition"]].head())
+print(df[["brand", "model_extracted", "condition"]].head())
