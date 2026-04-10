@@ -90,8 +90,6 @@ MODEL_PATTERNS = [
     ("Enyaq", [r"\benyaq\b"]),
     ("Citigo", [r"\bcitigo\b"]),
     ("Felicia", [r"\bfelicia\b"]),
-
-    # mixed-brand fallback
     ("Passat", [r"\bpassat\b"]),
     ("Golf", [r"\bgolf\b"]),
     ("Tiguan", [r"\btiguan\b"]),
@@ -102,6 +100,11 @@ MODEL_PATTERNS = [
     ("Q5", [r"\bq5\b"]),
     ("X3", [r"\bx3\b"]),
     ("X5", [r"\bx5\b"]),
+
+    ("X3", [r"\bx3\b"]),
+    ("X5", [r"\bx5\b"]),
+    ("Focus", [r"\bfocus\b"]),
+    ("Mondeo", [r"\bmondeo\b"]),
 ]
 
 BODY_PATTERNS = [
@@ -124,9 +127,7 @@ TRIM_PATTERNS = [
 ]
 
 
-# =========================
-# HELPERS
-# =========================
+
 
 def _first_match(text: str, patterns) -> Optional[str]:
     for label, regexes in patterns:

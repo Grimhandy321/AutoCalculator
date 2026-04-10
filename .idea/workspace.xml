@@ -5,9 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="data">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/bazos_cars_labeled.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/bazos_title.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/vision_predictions.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/brand_classes.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/condition_classes.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/model_classes.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/vision_model.keras" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/vision_model_final.keras" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/utils/image_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/bazos_cars_10k.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/bazos_cars_10k.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seen_ids.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/seen_ids.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/1_prepare_labels.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/1_prepare_labels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/2_download_images_parallel.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/2_download_images_parallel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/5_train_price_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/5_train_price_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/6_predict_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/6_predict_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/utils/car_title_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/utils/car_title_parser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +91,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;memory.settings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -86,7 +104,7 @@
       <recent name="C:\Users\Uživatel\PycharmProjects\AutoCalculator" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.bazos_scraper_v2">
+  <component name="RunManager">
     <configuration name="bazos_scraper_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutoCalculator" />
       <option name="ENV_FILES" value="" />
@@ -133,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.bazos_scraper_v2" />
         <item itemvalue="Python.car_title_parser" />
+        <item itemvalue="Python.bazos_scraper_v2" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775212241262</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="data">
+      <option name="closed" value="true" />
+      <created>1775656716868</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1775656716868</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

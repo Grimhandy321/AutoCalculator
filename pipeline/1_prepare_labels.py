@@ -5,8 +5,9 @@ from pipeline.utils.car_title_parser import clean_car_columns
 
 CSV_FILE = "../data/bazos_cars_10k.csv"
 OUTPUT_FILE = "../data/bazos_cars_labeled.csv"
+BAD_IMAGE_URL = "https://www.jasminka.cz/images/v/lecenizv.jpg"
 
-df = pd.read_csv(CSV_FILE)
+df = pd.read_csv(CSV_FILE,low_memory=False)
 
 
 for col in ["title", "description", "brand", "model"]:
@@ -81,27 +82,22 @@ def infer_condition(text):
         if kw in t:
             return "good"
 
-    return "good"  # sensible default
+    return "good"
 
 df["condition"] = (df["title"] + " " + df["description"]).apply(infer_condition)
 
-# -----------------------------
-# Keep useful rows
-# -----------------------------
+
 df = df.dropna(subset=["listing_id", "price_czk"])
 
 df = df[df["price_czk"] > 10000]
 df = df[df["price_czk"] < 5000000]
+
 df = clean_car_columns(df, title_col="title", model_col="model")
-# keep top common brands/models to avoid garbage classes
-model_counts = df["model_extracted"].value_counts()
-top_brands = df["brand"].value_counts().head(20).index
-valid_models = model_counts[model_counts >= 20].index
+df["image_urls"] = df["image_urls"].str.replace(BAD_IMAGE_URL, "", regex=False)
 
-print(valid_models)
-df = df[df["brand"].isin(top_brands)]
 
-df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8-sig")
+df.to_csv(OUTPUT_FILE,columns=['listing_id','brand','brand','price_czk','year','mileage_km','fuel','gearbox','power_kw','body_type','image_urls','category','condition','model_extracted','generation','trim','engine_displacement_l','fuel_type','engine_code','transmission',
+],  index=False, encoding="utf-8-sig")
 print(f"Saved labeled data: {OUTPUT_FILE}")
-print("Rows:", len(df))
+print("Shape:", df.shape)
 print(df[["brand", "model_extracted", "condition"]].head())

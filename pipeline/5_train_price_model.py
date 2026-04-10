@@ -37,14 +37,14 @@ df["year"] = df["year"].fillna(df["year"].median())
 df["mileage_km"] = df["mileage_km"].fillna(df["mileage_km"].median())
 df["power_kw"] = df["power_kw"].fillna(df["power_kw"].median())
 
-for col in ["fuel", "gearbox", "body_type", "pred_brand", "pred_model", "pred_condition"]:
+for col in ["fuel", "gearbox", "pred_brand", "pred_model", "pred_condition"]:
     df[col] = df[col].fillna("unknown").astype(str)
 
 # -----------------------------
 # Encode categoricals
 # -----------------------------
 encoders = {}
-cat_cols = ["fuel", "gearbox", "body_type", "pred_brand", "pred_model", "pred_condition"]
+cat_cols = ["fuel", "gearbox", "pred_brand", "pred_model", "pred_condition"]
 
 for col in cat_cols:
     le = LabelEncoder()
@@ -80,7 +80,7 @@ model = XGBRegressor(
     subsample=0.9,
     colsample_bytree=0.9,
     objective="reg:squarederror",
-    n_jobs=-1,   # <-- parallel CPU usage
+    n_jobs=-1,
     random_state=42
 )
 

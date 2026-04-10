@@ -13,9 +13,9 @@ vision_model = load_model(os.path.join(MODEL_DIR, "vision_model_final.keras"))
 price_model = joblib.load(os.path.join(MODEL_DIR, "price_model.pkl"))
 encoders = joblib.load(os.path.join(MODEL_DIR, "price_encoders.pkl"))
 
-brand_classes = np.load(os.path.join(MODEL_DIR, "brand_classes.npy"), allow_pickle=True)
-model_classes = np.load(os.path.join(MODEL_DIR, "model_classes.npy"), allow_pickle=True)
-condition_classes = np.load(os.path.join(MODEL_DIR, "condition_classes.npy"), allow_pickle=True)
+brand_classes = np.load(os.path.join(MODEL_DIR, "brand_classes.csv"), allow_pickle=True)
+model_classes = np.load(os.path.join(MODEL_DIR, "model_classes.csv"), allow_pickle=True)
+condition_classes = np.load(os.path.join(MODEL_DIR, "condition_classes.csv"), allow_pickle=True)
 
 def prepare_image(path):
     img = load_img(path, target_size=IMG_SIZE)
