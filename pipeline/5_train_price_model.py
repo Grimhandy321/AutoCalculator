@@ -11,7 +11,7 @@ from xgboost import XGBRegressor
 
 DATA_FILE = "../data/bazos_cars_labeled.csv"
 VISION_FILE = "../data/vision_predictions.csv"
-MODEL_DIR = "models"
+MODEL_DIR = "../models"
 
 os.makedirs(MODEL_DIR, exist_ok=True)
 
@@ -23,9 +23,7 @@ vision_df["listing_id"] = vision_df["listing_id"].astype(str)
 
 df = df.merge(vision_df, on="listing_id", how="inner")
 
-# -----------------------------
 # Clean data
-# -----------------------------
 for col in ["price_czk", "year", "mileage_km", "power_kw"]:
     df[col] = pd.to_numeric(df[col], errors="coerce")
 
@@ -37,14 +35,13 @@ df["year"] = df["year"].fillna(df["year"].median())
 df["mileage_km"] = df["mileage_km"].fillna(df["mileage_km"].median())
 df["power_kw"] = df["power_kw"].fillna(df["power_kw"].median())
 
-for col in ["fuel", "gearbox", "pred_brand", "pred_model", "pred_condition"]:
+
+for col in ["fuel", "gearbox", "pred_brand", "pred_model", "pred_condition", "body_type"]:
     df[col] = df[col].fillna("unknown").astype(str)
 
-# -----------------------------
 # Encode categoricals
-# -----------------------------
 encoders = {}
-cat_cols = ["fuel", "gearbox", "pred_brand", "pred_model", "pred_condition"]
+cat_cols = ["fuel", "gearbox", "pred_brand", "pred_model", "pred_condition", "body_type"]
 
 for col in cat_cols:
     le = LabelEncoder()
@@ -53,9 +50,7 @@ for col in cat_cols:
 
 joblib.dump(encoders, os.path.join(MODEL_DIR, "price_encoders.pkl"))
 
-# -----------------------------
 # Features / target
-# -----------------------------
 feature_cols = [
     "year", "mileage_km", "power_kw",
     "fuel", "gearbox", "body_type",
@@ -63,16 +58,17 @@ feature_cols = [
     "brand_conf", "model_conf", "condition_conf"
 ]
 
-X = df[feature_cols]
-y = np.log1p(df["price_czk"])  # log transform improves regression
+# Ensure all features are numeric
+X = df[feature_cols].apply(pd.to_numeric, errors="coerce")
+X = X.fillna(0)
+
+y = np.log1p(df["price_czk"])
 
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-# -----------------------------
-# Train XGBoost (parallelized)
-# -----------------------------
+# Train XGBoost
 model = XGBRegressor(
     n_estimators=500,
     max_depth=8,
@@ -86,9 +82,7 @@ model = XGBRegressor(
 
 model.fit(X_train, y_train)
 
-# -----------------------------
 # Evaluate
-# -----------------------------
 pred_log = model.predict(X_test)
 pred = np.expm1(pred_log)
 actual = np.expm1(y_test)
