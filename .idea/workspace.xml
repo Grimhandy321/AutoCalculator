@@ -5,28 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="data">
-      <change afterPath="$PROJECT_DIR$/data/car_images/214259594.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/car_images/214278064.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/car_images/214301171.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/car_images_augmented/214259594_blur.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/car_images_augmented/214259594_bright.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/car_images_augmented/214259594_contrast_high.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/car_images_augmented/214259594_contrast_low.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/car_images_augmented/214259594_cool.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/car_images_augmented/214259594_dark.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/car_images_augmented/214259594_desaturated.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/download_progress.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evluatin.pbix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/price_pipeline.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/price_pipeline_max.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/test_idx.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bazos_cars_10k.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/bazos_cars_10k.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seen_ids.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/seen_ids.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/price_encoders.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/price_encoders.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/price_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/price_model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/5_train_price_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/5_train_price_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/valuate_price_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/valuate_price_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +88,7 @@
       <recent name="C:\Users\Uživatel\PycharmProjects\AutoCalculator" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.bazos_scraper_v2">
     <configuration name="bazos_scraper_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutoCalculator" />
       <option name="ENV_FILES" value="" />
@@ -123,6 +102,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapper/bazos_scraper_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -145,6 +125,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pipeline/utils/car_title_parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -164,7 +145,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-ce6832f46686-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.178" />
+        <option value="bundled-python-sdk-ca5e2b39c7df-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.308" />
       </set>
     </attachedChunks>
   </component>
