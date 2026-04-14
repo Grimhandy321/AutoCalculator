@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="data">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data_cleaned.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/bazos_cars_labeled.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/bazos_cars_labeled.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/execution/with_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/execution/with_images.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/brand_classes.npy" beforeDir="false" afterPath="$PROJECT_DIR$/models/brand_classes.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_classes.npy" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_classes.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/1_prepare_labels.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/1_prepare_labels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/4_generate_vision_predictions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/4_generate_vision_predictions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/evaluate_vision_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/evaluate_vision_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +98,7 @@
       <recent name="C:\Users\Uživatel\PycharmProjects\AutoCalculator" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.bazos_scraper_v2">
+  <component name="RunManager">
     <configuration name="bazos_scraper_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutoCalculator" />
       <option name="ENV_FILES" value="" />
@@ -102,7 +112,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapper/bazos_scraper_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -125,7 +134,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pipeline/utils/car_title_parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -145,7 +153,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-ca5e2b39c7df-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.308" />
+        <option value="bundled-python-sdk-ce6832f46686-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.178" />
       </set>
     </attachedChunks>
   </component>
@@ -269,11 +277,41 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="a3a38bf7-693f-445b-b8b7-0cfa77f04890" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
             <State />
+          </value>
+        </entry>
+        <entry key="a3a38bf7-693f-445b-b8b7-0cfa77f04890">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Uživatel/PycharmProjects/AutoCalculator/scrapper" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
           </value>
         </entry>
       </map>

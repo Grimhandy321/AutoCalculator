@@ -1,241 +1,183 @@
 import os
-import re
 import numpy as np
 import pandas as pd
-
+import torch
+import torch.nn as nn
+from torch.utils.data import Dataset, DataLoader
+from torchvision import transforms, models
+from PIL import Image
+from tqdm import tqdm
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
 
-import tensorflow as tf
-from tensorflow.keras.applications import EfficientNetB0
-from tensorflow.keras.applications.efficientnet import preprocess_input
-from tensorflow.keras.layers import Input, Dense, Dropout, GlobalAveragePooling2D
-from tensorflow.keras.models import Model
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
-
-
-# =============================
-# CONFIG
-# =============================
-CSV_FILE = "../data/bazos_cars_labeled.csv"
+CSV_FILE = "../data/data_cleaned.csv"
 IMAGE_DIR = "../data/car_images"
 MODEL_DIR = "../models"
 
-IMG_SIZE = (224, 224)
-BATCH_SIZE = 30
-EPOCHS_STAGE1 = 20
-EPOCHS_STAGE2 = 30
+IMG_SIZE = 224
+BATCH_SIZE = 32
+EPOCHS = 25
+
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 os.makedirs(MODEL_DIR, exist_ok=True)
 
-
-# =============================
-# LOAD DATA
-# =============================
-df = pd.read_csv(CSV_FILE, low_memory=False)
+df = pd.read_csv(CSV_FILE)
 df["listing_id"] = df["listing_id"].astype(str)
+df = df.dropna(subset=["brand", "model_extracted", "condition", "image_urls"])
 
-# fallback image path
 df["image_path"] = df["listing_id"].apply(
     lambda x: os.path.join(IMAGE_DIR, f"{x}.jpg")
 )
 
-df = df.dropna(subset=["image_path", "brand", "model_extracted", "condition"])
-df = df.reset_index(drop=True)
+df = df[df["image_path"].apply(os.path.exists)].reset_index(drop=True)
 
-print("Rows:", len(df))
+brand_classes = np.sort(df["brand"].unique())
+model_classes = np.sort(df["model_extracted"].unique())
+condition_classes = np.sort(df["condition"].unique())
 
+brand_to_idx = {b:i for i,b in enumerate(brand_classes)}
+model_to_idx = {m:i for i,m in enumerate(model_classes)}
+cond_to_idx = {c:i for i,c in enumerate(condition_classes)}
 
+df["brand_enc"] = df["brand"].map(brand_to_idx)
+df["model_enc"] = df["model_extracted"].map(model_to_idx)
+df["cond_enc"] = df["condition"].map(cond_to_idx)
 
-print("After removing rare brands:", len(df))
+brand_model_map = {}
 
-# ENCODE LABELS
-brand_le = LabelEncoder()
-model_le = LabelEncoder()
-condition_le = LabelEncoder()
+for b in df["brand_enc"].unique():
+    brand_model_map[str(b)] = df[df["brand_enc"] == b]["model_enc"].unique().tolist()
 
-df["brand_enc"] = brand_le.fit_transform(df["brand"].astype(str))
-df["model_enc"] = model_le.fit_transform(df["model_extracted"].astype(str))
-df["condition_enc"] = condition_le.fit_transform(df["condition"].astype(str))
+train_df, val_df = train_test_split(df, test_size=0.2, random_state=42, shuffle=True)
 
-np.save(os.path.join(MODEL_DIR, "brand_classes"), brand_le.classes_)
-np.save(os.path.join(MODEL_DIR, "model_classes"), model_le.classes_)
-np.save(os.path.join(MODEL_DIR, "condition_classes"), condition_le.classes_)
+transform = transforms.Compose([
+    transforms.Resize((IMG_SIZE, IMG_SIZE)),
+    transforms.ToTensor(),
+])
 
+class CarDataset(Dataset):
+    def __init__(self, df):
+        self.df = df
 
-brand_counts = df["brand_enc"].value_counts()
+    def __len__(self):
+        return len(self.df)
 
-valid_brands = brand_counts[brand_counts >= 2].index
-df = df[df["brand_enc"].isin(valid_brands)].reset_index(drop=True)
+    def __getitem__(self, i):
+        r = self.df.iloc[i]
+        img = Image.open(r["image_path"]).convert("RGB")
+        img = transform(img)
 
-# =============================
-# SPLIT
-# =============================
-train_df, val_df = train_test_split(
-    df,
-    test_size=0.2,
-    random_state=42,
-    stratify=df["brand_enc"]
-)
+        return (
+            img,
+            torch.tensor(r["brand_enc"]),
+            torch.tensor(r["model_enc"]),
+            torch.tensor(r["cond_enc"])
+        )
 
+train_loader = DataLoader(CarDataset(train_df), batch_size=BATCH_SIZE, shuffle=True, num_workers=2, pin_memory=True)
+val_loader = DataLoader(CarDataset(val_df), batch_size=BATCH_SIZE, shuffle=False)
 
-# =============================
-# IMAGE LOADER
-# =============================
-def load_image(path):
-    img = load_img(path, target_size=IMG_SIZE)
-    img = img_to_array(img)
-    return preprocess_input(img)
+class HierarchicalModel(nn.Module):
+    def __init__(self):
+        super().__init__()
 
+        self.backbone = models.efficientnet_b0(weights=models.EfficientNet_B0_Weights.DEFAULT)
+        self.backbone.classifier = nn.Identity()
 
-# =============================
-# GENERATOR
-# =============================
-def data_generator(dataframe, batch_size=BATCH_SIZE, shuffle=True):
-    while True:
-        if shuffle:
-            dataframe = dataframe.sample(frac=1).reset_index(drop=True)
+        self.shared = nn.Sequential(
+            nn.Linear(1280, 256),
+            nn.ReLU(),
+            nn.Dropout(0.4)
+        )
 
-        for i in range(0, len(dataframe), batch_size):
-            batch = dataframe.iloc[i:i + batch_size]
+        self.brand_output = nn.Linear(256, len(brand_classes))
+        self.model_output = nn.Linear(256, len(model_classes))
+        self.condition_output = nn.Linear(256, len(condition_classes))
 
-            images, brand_y, model_y, cond_y = [], [], [], []
+    def forward(self, x):
+        x = self.backbone(x)
+        x = self.shared(x)
 
-            for _, row in batch.iterrows():
-                try:
-                    images.append(load_image(row["image_path"]))
-                    brand_y.append(row["brand_enc"])
-                    model_y.append(row["model_enc"])
-                    cond_y.append(row["condition_enc"])
-                except:
-                    continue
+        return {
+            "brand": self.brand_output(x),
+            "model": self.model_output(x),
+            "condition": self.condition_output(x),
+        }
 
-            if len(images) == 0:
-                continue
+model = HierarchicalModel().to(DEVICE)
 
-            yield (
-                np.array(images),
-                {
-                    "brand_output": np.array(brand_y),
-                    "model_output": np.array(model_y),
-                    "condition_output": np.array(cond_y),
-                }
-            )
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 
+def train_epoch(loader):
+    model.train()
+    total_loss = 0
 
-# =============================
-# MODEL
-# =============================
-base_model = EfficientNetB0(
-    weights="imagenet",
-    include_top=False,
-    input_tensor=Input(shape=(224, 224, 3))
-)
+    loop = tqdm(loader, desc="Training")
 
-# Stage 1 freeze
-base_model.trainable = False
+    for imgs, brands, models, conds in loop:
+        imgs = imgs.to(DEVICE)
+        brands = brands.to(DEVICE)
+        models = models.to(DEVICE)
+        conds = conds.to(DEVICE)
 
-x = base_model.output
-x = GlobalAveragePooling2D()(x)
-x = Dense(256, activation="relu")(x)
-x = Dropout(0.4)(x)
+        optimizer.zero_grad()
 
-brand_output = Dense(len(brand_le.classes_), activation="softmax", name="brand_output")(x)
-model_output = Dense(len(model_le.classes_), activation="softmax", name="model_output")(x)
-condition_output = Dense(len(condition_le.classes_), activation="softmax", name="condition_output")(x)
+        out = model(imgs)
 
-model = Model(
-    inputs=base_model.input,
-    outputs=[brand_output, model_output, condition_output]
-)
+        loss = (
+            0.3 * criterion(out["brand"], brands) +
+            1.0 * criterion(out["model"], models) +
+            0.7 * criterion(out["condition"], conds)
+        )
 
+        loss.backward()
+        optimizer.step()
 
-# =============================
-# COMPILE STAGE 1
-# =============================
-model.compile(
-    optimizer=tf.keras.optimizers.Adam(1e-3),
-    loss={
-        "brand_output": "sparse_categorical_crossentropy",
-        "model_output": "sparse_categorical_crossentropy",
-        "condition_output": "sparse_categorical_crossentropy",
-    },
-    loss_weights={
-        "brand_output": 0.3,
-        "model_output": 1.0,
-        "condition_output": 0.7,
-    },
-    metrics={
-        "brand_output": ["accuracy"],
-        "model_output": ["accuracy"],
-        "condition_output": ["accuracy"],
-    }
-)
+        total_loss += loss.item()
 
-callbacks_stage1 = [
-    EarlyStopping(patience=3, restore_best_weights=True),
-    ReduceLROnPlateau(patience=2, factor=0.5, verbose=1),
-    ModelCheckpoint(os.path.join(MODEL_DIR, "stage1.keras"), save_best_only=True),
-]
+        loop.set_postfix(loss=loss.item(), avg=total_loss / (loop.n + 1))
 
-print("\n=== STAGE 1 ===")
-model.fit(
-    data_generator(train_df),
-    validation_data=data_generator(val_df, shuffle=False),
-    steps_per_epoch=max(1, len(train_df) // BATCH_SIZE),
-    validation_steps=max(1, len(val_df) // BATCH_SIZE),
-    epochs=EPOCHS_STAGE1,
-    callbacks=callbacks_stage1,
-)
+    return total_loss / len(loader)
 
+def validate(loader):
+    model.eval()
+    correct_b = 0
+    correct_m = 0
+    correct_c = 0
+    total = 0
 
-# =============================
-# STAGE 2 FINETUNE
-# =============================
-base_model.trainable = True
+    with torch.no_grad():
+        for imgs, brands, models, conds in loader:
+            imgs = imgs.to(DEVICE)
+            brands = brands.to(DEVICE)
+            models = models.to(DEVICE)
+            conds = conds.to(DEVICE)
 
-for layer in base_model.layers[:-30]:
-    layer.trainable = False
+            out = model(imgs)
 
-model.compile(
-    optimizer=tf.keras.optimizers.Adam(1e-6),
-    loss={
-        "brand_output": "sparse_categorical_crossentropy",
-        "model_output": "sparse_categorical_crossentropy",
-        "condition_output": "sparse_categorical_crossentropy",
-    },
-    loss_weights={
-        "brand_output": 0.3,
-        "model_output": 1.0,
-        "condition_output": 0.7,
-    },
-    metrics={
-        "brand_output": ["accuracy"],
-        "model_output": ["accuracy"],
-        "condition_output": ["accuracy"],
-    }
-)
+            pb = out["brand"].argmax(1)
+            pm = out["model"].argmax(1)
+            pc = out["condition"].argmax(1)
 
-callbacks_stage2 = [
-    EarlyStopping(patience=4, restore_best_weights=True),
-    ReduceLROnPlateau(patience=2, factor=0.5, verbose=1),
-    ModelCheckpoint(os.path.join(MODEL_DIR, "final.keras"), save_best_only=True),
-]
+            correct_b += (pb == brands).sum().item()
+            correct_m += (pm == models).sum().item()
+            correct_c += (pc == conds).sum().item()
+            total += imgs.size(0)
 
-print("\n=== STAGE 2 ===")
-model.fit(
-    data_generator(train_df),
-    validation_data=data_generator(val_df, shuffle=False),
-    steps_per_epoch=max(1, len(train_df) // BATCH_SIZE),
-    validation_steps=max(1, len(val_df) // BATCH_SIZE),
-    epochs=EPOCHS_STAGE2,
-    callbacks=callbacks_stage2,
-)
+    print(f"Brand acc: {correct_b/total:.3f}")
+    print(f"Model acc: {correct_m/total:.3f}")
+    print(f"Condition acc: {correct_c/total:.3f}")
 
+for epoch in range(EPOCHS):
+    print(f"\nEpoch {epoch+1}/{EPOCHS}")
+    train_epoch(train_loader)
+    validate(val_loader)
 
-# =============================
-# SAVE
-# =============================
-model.save(os.path.join(MODEL_DIR, "vision_model_final.keras"))
-print("DONE ✅")
+torch.save(model.state_dict(), os.path.join(MODEL_DIR, "vision_model_final.pt"))
+
+np.save(os.path.join(MODEL_DIR, "brand_classes.npy"), brand_classes)
+np.save(os.path.join(MODEL_DIR, "model_classes.npy"), model_classes)
+np.save(os.path.join(MODEL_DIR, "condition_classes.npy"), condition_classes)
+
+print("DONE")
