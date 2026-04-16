@@ -79,7 +79,9 @@ brand_model_mask = np.zeros((num_brands, num_models), dtype=np.float32)
 for _, row in df.iterrows():
     brand_model_mask[row["brand_enc"], row["model_enc"]] = 1
 
+np.save(os.path.join(MODEL_DIR, "brand_model_mask.npy"), brand_model_mask)
 brand_model_mask = torch.tensor(brand_model_mask).to(DEVICE)
+
 
 # =========================
 # SPLIT
