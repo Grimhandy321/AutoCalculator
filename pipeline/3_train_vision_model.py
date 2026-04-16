@@ -43,6 +43,8 @@ df = df.dropna(subset=["image_path"]).reset_index(drop=True)
 
 print("Valid images:", len(df))
 
+print(df["brand"].value_counts())
+
 df = df.dropna(subset=["image_path", "brand", "model_extracted", "condition"])
 df = df.reset_index(drop=True)
 
@@ -257,4 +259,4 @@ for epoch in range(EPOCHS_STAGE1 + EPOCHS_STAGE2):
 
 torch.save(model.state_dict(), os.path.join(MODEL_DIR, "vision_model_final.pt"))
 
-print("DONE ✅")
+print("DONE ")
