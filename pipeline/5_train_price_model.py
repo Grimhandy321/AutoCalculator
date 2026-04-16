@@ -84,7 +84,6 @@ feature_cols = [
     "log_mileage",
     "fuel",
     "transmission",
-    "body_type",
     "pred_brand",
     "pred_model",
     "pred_condition",
@@ -105,7 +104,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 joblib.dump((X_test.index, y_test.index), os.path.join(MODEL_DIR, "test_idx.pkl"))
 
 categorical_features = [
-    "fuel", "transmission", "body_type",
+    "fuel", "transmission",
     "pred_brand", "pred_model", "pred_condition"
 ]
 

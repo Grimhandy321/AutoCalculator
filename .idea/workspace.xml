@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="data">
-      <change afterPath="$PROJECT_DIR$/asd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/data_cleaned.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bazos_cars_labeled.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/bazos_cars_labeled.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/execution/with_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/execution/with_images.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/bazos_cars_10k.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/bazos_cars_10k.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/seen_ids.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/seen_ids.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/brand_classes.npy" beforeDir="false" afterPath="$PROJECT_DIR$/models/brand_classes.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/model_classes.npy" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_classes.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/1_prepare_labels.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/1_prepare_labels.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/4_generate_vision_predictions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/4_generate_vision_predictions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testing/evaluate_vision_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/evaluate_vision_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +94,7 @@
       <recent name="C:\Users\Uživatel\PycharmProjects\AutoCalculator" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.bazos_scraper_v2">
     <configuration name="bazos_scraper_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutoCalculator" />
       <option name="ENV_FILES" value="" />
@@ -270,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775854384113</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="data">
+      <option name="closed" value="true" />
+      <created>1776188429335</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1776188429335</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

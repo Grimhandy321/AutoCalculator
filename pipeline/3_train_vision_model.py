@@ -1,55 +1,102 @@
 import os
 import numpy as np
 import pandas as pd
+from PIL import Image
+
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms, models
-from PIL import Image
-from tqdm import tqdm
-from sklearn.model_selection import train_test_split
 
-CSV_FILE = "../data/data_cleaned.csv"
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from tqdm import tqdm
+
+# CONFIG
+CSV_FILE = "../data/bazos_cars_labeled.csv"
 IMAGE_DIR = "../data/car_images"
 MODEL_DIR = "../models"
 
 IMG_SIZE = 224
-BATCH_SIZE = 32
-EPOCHS = 25
+BATCH_SIZE = 30
+EPOCHS_STAGE1 = 20
+EPOCHS_STAGE2 = 30
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 os.makedirs(MODEL_DIR, exist_ok=True)
 
-df = pd.read_csv(CSV_FILE)
+# LOAD DATA
+df = pd.read_csv(CSV_FILE, low_memory=False)
 df["listing_id"] = df["listing_id"].astype(str)
-df = df.dropna(subset=["brand", "model_extracted", "condition", "image_urls"])
 
-df["image_path"] = df["listing_id"].apply(
-    lambda x: os.path.join(IMAGE_DIR, f"{x}.jpg")
+def find_image_path(listing_id):
+    for ext in [".jpg", ".jpeg", ".png", ".webp"]:
+        path = os.path.join(IMAGE_DIR, f"{listing_id}{ext}")
+        if os.path.exists(path):
+            return path
+    return None
+
+df["image_path"] = df["listing_id"].apply(find_image_path)
+
+df = df.dropna(subset=["image_path"]).reset_index(drop=True)
+
+print("Valid images:", len(df))
+
+df = df.dropna(subset=["image_path", "brand", "model_extracted", "condition"])
+df = df.reset_index(drop=True)
+
+print("Rows:", len(df))
+
+# ENCODE
+brand_le = LabelEncoder()
+model_le = LabelEncoder()
+condition_le = LabelEncoder()
+
+df["brand_enc"] = brand_le.fit_transform(df["brand"].astype(str))
+df["model_enc"] = model_le.fit_transform(df["model_extracted"].astype(str))
+df["condition_enc"] = condition_le.fit_transform(df["condition"].astype(str))
+
+np.save(os.path.join(MODEL_DIR, "brand_classes"), brand_le.classes_)
+np.save(os.path.join(MODEL_DIR, "model_classes"), model_le.classes_)
+np.save(os.path.join(MODEL_DIR, "condition_classes"), condition_le.classes_)
+
+# FILTER
+brand_counts = df["brand_enc"].value_counts()
+valid_brands = brand_counts[brand_counts >= 2].index
+df = df[df["brand_enc"].isin(valid_brands)].reset_index(drop=True)
+
+# BRAND → MODEL MASK
+num_brands = len(brand_le.classes_)
+num_models = len(model_le.classes_)
+
+brand_model_mask = np.zeros((num_brands, num_models))
+
+for _, row in df.iterrows():
+    brand_model_mask[row["brand_enc"], row["model_enc"]] = 1
+
+brand_model_mask = torch.tensor(brand_model_mask).to(DEVICE)
+
+
+# remove brands with too few samples
+brand_counts = df["brand_enc"].value_counts()
+valid_brands = brand_counts[brand_counts >= 5].index
+df = df[df["brand_enc"].isin(valid_brands)].reset_index(drop=True)
+# SPLIT
+train_df, val_df = train_test_split(
+    df,
+    test_size=0.2,
+    random_state=42,
+    stratify=df["brand_enc"] # same ratio of brands in the test and the train data
 )
 
-df = df[df["image_path"].apply(os.path.exists)].reset_index(drop=True)
+print("\n=== SPLIT CHECK ===")
+print("Train distribution:")
+print(train_df["brand"].value_counts(normalize=True).head(10))
+print("\nVal distribution:")
+print(val_df["brand"].value_counts(normalize=True).head(10))
 
-brand_classes = np.sort(df["brand"].unique())
-model_classes = np.sort(df["model_extracted"].unique())
-condition_classes = np.sort(df["condition"].unique())
-
-brand_to_idx = {b:i for i,b in enumerate(brand_classes)}
-model_to_idx = {m:i for i,m in enumerate(model_classes)}
-cond_to_idx = {c:i for i,c in enumerate(condition_classes)}
-
-df["brand_enc"] = df["brand"].map(brand_to_idx)
-df["model_enc"] = df["model_extracted"].map(model_to_idx)
-df["cond_enc"] = df["condition"].map(cond_to_idx)
-
-brand_model_map = {}
-
-for b in df["brand_enc"].unique():
-    brand_model_map[str(b)] = df[df["brand_enc"] == b]["model_enc"].unique().tolist()
-
-train_df, val_df = train_test_split(df, test_size=0.2, random_state=42, shuffle=True)
-
+# DATASET
 transform = transforms.Compose([
     transforms.Resize((IMG_SIZE, IMG_SIZE)),
     transforms.ToTensor(),
@@ -62,26 +109,28 @@ class CarDataset(Dataset):
     def __len__(self):
         return len(self.df)
 
-    def __getitem__(self, i):
-        r = self.df.iloc[i]
-        img = Image.open(r["image_path"]).convert("RGB")
+    def __getitem__(self, idx):
+        row = self.df.iloc[idx]
+
+        img = Image.open(row["image_path"]).convert("RGB")
         img = transform(img)
 
         return (
             img,
-            torch.tensor(r["brand_enc"]),
-            torch.tensor(r["model_enc"]),
-            torch.tensor(r["cond_enc"])
+            torch.tensor(row["brand_enc"]),
+            torch.tensor(row["model_enc"]),
+            torch.tensor(row["condition_enc"]),
         )
 
-train_loader = DataLoader(CarDataset(train_df), batch_size=BATCH_SIZE, shuffle=True, num_workers=2, pin_memory=True)
-val_loader = DataLoader(CarDataset(val_df), batch_size=BATCH_SIZE, shuffle=False)
+train_loader = DataLoader(CarDataset(train_df), batch_size=BATCH_SIZE, shuffle=True)
+val_loader = DataLoader(CarDataset(val_df), batch_size=BATCH_SIZE)
 
-class HierarchicalModel(nn.Module):
+# MODEL
+class VisionModel(nn.Module):
     def __init__(self):
         super().__init__()
 
-        self.backbone = models.efficientnet_b0(weights=models.EfficientNet_B0_Weights.DEFAULT)
+        self.backbone = models.efficientnet_b0(pretrained=True)
         self.backbone.classifier = nn.Identity()
 
         self.shared = nn.Sequential(
@@ -90,22 +139,23 @@ class HierarchicalModel(nn.Module):
             nn.Dropout(0.4)
         )
 
-        self.brand_output = nn.Linear(256, len(brand_classes))
-        self.model_output = nn.Linear(256, len(model_classes))
-        self.condition_output = nn.Linear(256, len(condition_classes))
+        self.brand_output = nn.Linear(256, num_brands)
+        self.model_output = nn.Linear(256, num_models)
+        self.condition_output = nn.Linear(256, len(condition_le.classes_))
 
     def forward(self, x):
         x = self.backbone(x)
         x = self.shared(x)
 
         return {
-            "brand": self.brand_output(x),
-            "model": self.model_output(x),
-            "condition": self.condition_output(x),
+            "brand_output": self.brand_output(x),
+            "model_output": self.model_output(x),
+            "condition_output": self.condition_output(x),
         }
 
-model = HierarchicalModel().to(DEVICE)
+model = VisionModel().to(DEVICE)
 
+# TRAIN
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 
@@ -113,22 +163,30 @@ def train_epoch(loader):
     model.train()
     total_loss = 0
 
-    loop = tqdm(loader, desc="Training")
+    correct_b = 0
+    correct_m = 0
+    correct_c = 0
+    total = 0
 
-    for imgs, brands, models, conds in loop:
+    loop = tqdm(loader, desc="Training", leave=False)
+
+    for imgs, brands, models_gt, conds in loop:
         imgs = imgs.to(DEVICE)
         brands = brands.to(DEVICE)
-        models = models.to(DEVICE)
+        models_gt = models_gt.to(DEVICE)
         conds = conds.to(DEVICE)
 
         optimizer.zero_grad()
 
-        out = model(imgs)
+        outputs = model(imgs)
+
+        mask = brand_model_mask[brands]
+        model_logits = outputs["model_output"].masked_fill(mask == 0, -1e9)
 
         loss = (
-            0.3 * criterion(out["brand"], brands) +
-            1.0 * criterion(out["model"], models) +
-            0.7 * criterion(out["condition"], conds)
+            0.3 * criterion(outputs["brand_output"], brands) +
+            1.0 * criterion(model_logits, models_gt) +
+            0.7 * criterion(outputs["condition_output"], conds)
         )
 
         loss.backward()
@@ -136,48 +194,67 @@ def train_epoch(loader):
 
         total_loss += loss.item()
 
-        loop.set_postfix(loss=loss.item(), avg=total_loss / (loop.n + 1))
+        # accuracy
+        pb = outputs["brand_output"].argmax(1)
+        pm = model_logits.argmax(1)
+        pc = outputs["condition_output"].argmax(1)
+
+        correct_b += (pb == brands).sum().item()
+        correct_m += (pm == models_gt).sum().item()
+        correct_c += (pc == conds).sum().item()
+        total += imgs.size(0)
+
+        loop.set_postfix({
+            "loss": f"{loss.item():.3f}",
+            "b_acc": f"{correct_b/total:.2f}",
+            "m_acc": f"{correct_m/total:.2f}",
+            "c_acc": f"{correct_c/total:.2f}",
+        })
 
     return total_loss / len(loader)
 
 def validate(loader):
     model.eval()
+
     correct_b = 0
     correct_m = 0
     correct_c = 0
     total = 0
 
+    loop = tqdm(loader, desc="Validation", leave=False)
+
     with torch.no_grad():
-        for imgs, brands, models, conds in loader:
+        for imgs, brands, models_gt, conds in loop:
             imgs = imgs.to(DEVICE)
             brands = brands.to(DEVICE)
-            models = models.to(DEVICE)
+            models_gt = models_gt.to(DEVICE)
             conds = conds.to(DEVICE)
 
-            out = model(imgs)
+            outputs = model(imgs)
 
-            pb = out["brand"].argmax(1)
-            pm = out["model"].argmax(1)
-            pc = out["condition"].argmax(1)
+            mask = brand_model_mask[brands]
+            model_logits = outputs["model_output"].masked_fill(mask == 0, -1e9)
+
+            pb = outputs["brand_output"].argmax(1)
+            pm = model_logits.argmax(1)
+            pc = outputs["condition_output"].argmax(1)
 
             correct_b += (pb == brands).sum().item()
-            correct_m += (pm == models).sum().item()
+            correct_m += (pm == models_gt).sum().item()
             correct_c += (pc == conds).sum().item()
             total += imgs.size(0)
 
-    print(f"Brand acc: {correct_b/total:.3f}")
-    print(f"Model acc: {correct_m/total:.3f}")
-    print(f"Condition acc: {correct_c/total:.3f}")
+    print(f"\nVAL → Brand: {correct_b/total:.3f} | Model: {correct_m/total:.3f} | Cond: {correct_c/total:.3f}")
 
-for epoch in range(EPOCHS):
-    print(f"\nEpoch {epoch+1}/{EPOCHS}")
-    train_epoch(train_loader)
+# TRAIN LOOP
+for epoch in range(EPOCHS_STAGE1 + EPOCHS_STAGE2):
+    print(f"\n=== Epoch {epoch+1} ===")
+
+    loss = train_epoch(train_loader)
     validate(val_loader)
+
+    print(f"Train Loss: {loss:.4f}")
 
 torch.save(model.state_dict(), os.path.join(MODEL_DIR, "vision_model_final.pt"))
 
-np.save(os.path.join(MODEL_DIR, "brand_classes.npy"), brand_classes)
-np.save(os.path.join(MODEL_DIR, "model_classes.npy"), model_classes)
-np.save(os.path.join(MODEL_DIR, "condition_classes.npy"), condition_classes)
-
-print("DONE")
+print("DONE ✅")
