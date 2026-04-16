@@ -2,113 +2,60 @@
 <html>
 <head>
     <title>Car AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix"></script>
 </head>
-<body>
 
-<h1> Car Predictor</h1>
+<body class="bg-light">
 
+<div class="container py-5">
+    <h1 class="mb-4">Car Predictor</h1>
 
-<h2>1. Predict from Image</h2>
+    <div class="card p-4 mb-4 shadow-sm">
+        <input type="file" id="imageInput" class="form-control mb-2">
+        <button onclick="predict()" class="btn btn-primary">Predict</button>
+        <p id="result"></p>
+        <p id="confidence" class="text-muted"></p>
+    </div>
 
-<input type="file" id="imageInput">
-<button onclick="predict()">Predict</button>
+    <div class="card p-4 mb-4 shadow-sm">
+        <div class="row g-2">
+            <div class="col-md-3">
+                <label>Brand</label>
+                <select id="brand" class="form-select"></select>
+            </div>
+            <div class="col-md-3">
+                <label>Model</label>
+                <select id="model" class="form-select"></select>
+            </div>
+            <div class="col-md-3">
+                <label>Mileage</label>
+                <input id="mileage" type="number" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <label>Engine</label>
+                <select id="engine" class="form-select">
+                    <option>petrol</option>
+                    <option>diesel</option>
+                    <option>electric</option>
+                </select>
+            </div>
+        </div>
 
-<p id="result"></p>
+        <button onclick="estimate()" class="btn btn-success mt-3">Estimate</button>
+        <p id="priceResult"></p>
+    </div>
 
-<hr>
+    <div class="card p-4 shadow-sm">
+        <canvas id="accuracyChart"></canvas>
+        <canvas id="brandMatrix"></canvas>
+        <table class="table mt-3">
+            <tbody id="samplesTable"></tbody>
+        </table>
+    </div>
+</div>
 
-<!-- PRICE PART -->
-<h2>2. Estimate Price</h2>
-
-<label>Brand:</label>
-<select id="brand"></select>
-
-<label>Model:</label>
-<select id="model"></select>
-
-<button onclick="estimate()">Estimate</button>
-
-<p id="priceResult"></p>
-
-<script>
-const API = "http://localhost:8000";
-
-
-async function loadBrands() {
-    let res = await fetch(`${API}/data`);
-    let data = await res.json();
-
-    const brandSelect = document.getElementById("brand");
-
-    data.brands.forEach(b => {
-        let opt = document.createElement("option");
-        opt.value = b;
-        opt.text = b;
-        brandSelect.appendChild(opt);
-    });
-
-    loadModels(brandSelect.value);
-}
-
-async function loadModels(brand) {
-    let res = await fetch(`${API}/models/${brand}`);
-    let data = await res.json();
-
-    const modelSelect = document.getElementById("model");
-    modelSelect.innerHTML = "";
-
-    data.models.forEach(m => {
-        let opt = document.createElement("option");
-        opt.value = m;
-        opt.text = m;
-        modelSelect.appendChild(opt);
-    });
-}
-
-// brand change
-document.getElementById("brand").addEventListener("change", (e) => {
-    loadModels(e.target.value);
-});
-
-
-async function predict() {
-    const file = document.getElementById("imageInput").files[0];
-
-    let formData = new FormData();
-    formData.append("file", file);
-
-    let res = await fetch(`${API}/predict`, {
-        method: "POST",
-        body: formData
-    });
-
-    let data = await res.json();
-
-    document.getElementById("result").innerText =
-        `Brand: ${data.brand}, Model: ${data.model}, Price: ${data.price}€`;
-}
-
-
-async function estimate() {
-    const brand = document.getElementById("brand").value;
-    const model = document.getElementById("model").value;
-
-    let res = await fetch(`${API}/price`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ brand, model })
-    });
-
-    let data = await res.json();
-
-    document.getElementById("priceResult").innerText =
-        `Estimated price: ${data.price}€`;
-}
-
-loadBrands();
-</script>
-
+<script src="/frontend/script.js"></script>
 </body>
 </html>

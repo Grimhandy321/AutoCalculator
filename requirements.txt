@@ -8,3 +8,6 @@ xgboost
 torch
 torchvision
 tqdm
+PIL
+torche
+torchvision
