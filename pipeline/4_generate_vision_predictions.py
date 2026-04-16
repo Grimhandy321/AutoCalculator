@@ -66,7 +66,12 @@ with torch.no_grad():
 
         images = torch.stack(images).to(DEVICE)
 
-        brand_logits, model_logits, cond_logits = model(images)
+        outputs = model(images)
+
+        brand_logits = outputs["brand_output"]
+        model_logits = outputs["model_output"]
+        cond_logits = outputs["condition_output"]
+
 
         brand_pred = torch.softmax(brand_logits, dim=1).cpu().numpy()
         model_pred = torch.softmax(model_logits, dim=1).cpu().numpy()

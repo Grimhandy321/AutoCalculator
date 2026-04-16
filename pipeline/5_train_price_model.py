@@ -30,9 +30,7 @@ df = df.merge(vision_df, on="listing_id", how="inner")
 
 print(df.shape)
 
-# =========================
 # CLEANING
-# =========================
 for col in ["price_czk", "year", "mileage_km", "power_kw"]:
     df[col] = pd.to_numeric(df[col], errors="coerce")
 
@@ -78,9 +76,6 @@ print(df.shape)
 feature_cols = [
     "year",
     "mileage_km",
-    "power_kw",
-    "car_age",
-    "km_per_year",
     "log_mileage",
     "fuel",
     "transmission",
@@ -136,9 +131,6 @@ pipeline = Pipeline([
 # =========================
 pipeline.fit(X_train, y_train)
 
-# =========================
-# EVALUATE
-# =========================
 pred_log = pipeline.predict(X_test)
 pred = np.expm1(pred_log)
 actual = np.expm1(y_test)
@@ -154,9 +146,7 @@ print(f"RMSE : {rmse:.2f} CZK")
 print(f"R²   : {r2:.4f}")
 print(f"MAPE : {mape * 100:.2f} %")
 
-# =========================
 # CROSS VALIDATION
-# =========================
 scores = cross_val_score(
     pipeline,
     X,
@@ -168,8 +158,6 @@ scores = cross_val_score(
 
 print(f"CV MAE: {-scores.mean():.2f} CZK")
 
-# =========================
 # SAVE
-# =========================
 joblib.dump(pipeline, os.path.join(MODEL_DIR, "price_pipeline.pkl"))
 print("Saved pipeline.")

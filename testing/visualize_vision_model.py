@@ -1,38 +1,50 @@
 import os
 import torch
-from torchviz import make_dot
 
 from pipeline.models.loaders import load_model
 
+
 MODEL_DIR = "../models"
 MODEL_PATH = os.path.join(MODEL_DIR, "vision_model_final.pt")
+ONNX_PATH = os.path.join(MODEL_DIR, "vision_model.onnx")
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+
+
 model, brand_classes, model_classes, condition_classes = load_model(
     MODEL_PATH,
     MODEL_DIR,
     DEVICE
 )
 
+model.to(DEVICE)
 model.eval()
+
+
+class WrappedModel(torch.nn.Module):
+    def __init__(self, model):
+        super().__init__()
+        self.model = model
+
+    def forward(self, x):
+        out = self.model(x)
+        return out["brand_output"]   # důležité!
+
+wrapped_model = WrappedModel(model).to(DEVICE)
+wrapped_model.eval()
 
 
 x = torch.randn(1, 3, 224, 224).to(DEVICE)
 
 
-# FORWARD PASS
-outputs = model(x)
-
-graph_output = outputs["brand_output"]
-
-
-# CREATE GRAPH
-dot = make_dot(
-    graph_output,
-    params=dict(model.named_parameters())
+torch.onnx.export(
+    wrapped_model,
+    x,
+    ONNX_PATH,
+    input_names=["input"],
+    output_names=["brand_output"],
+    opset_version=11,
+    do_constant_folding=True
 )
 
-out_file = os.path.join(MODEL_DIR, "vision_model_graph")
-dot.render(out_file, format="png", cleanup=True)
-
-print("Saved model graph to:", out_file + ".png")
+print("ONNX model saved to:", ONNX_PATH)

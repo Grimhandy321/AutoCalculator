@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="final version">
-      <change afterPath="$PROJECT_DIR$/pipeline/models/loaders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline/models/vision_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/visualize_vision_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/vision_eval_report.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/training_curve.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bazos_cars_10k.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/bazos_cars_10k.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seen_ids.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/seen_ids.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/brand_classes.npy" beforeDir="false" afterPath="$PROJECT_DIR$/models/brand_classes.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/vision_model_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/models/vision_model_final.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vision_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/vision_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/price_pipeline.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/price_pipeline.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/test_idx.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/test_idx.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/4_generate_vision_predictions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/4_generate_vision_predictions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/6_predict_pipeline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/5_train_price_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/5_train_price_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/models/vision_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/models/vision_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testing/evaluate_vision_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/evaluate_vision_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/valuate_price_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/evaluate_price_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/visualize_vision_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/visualize_vision_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +75,7 @@
     "Python.scraper.executor": "Run",
     "Python.trainer.executor": "Run",
     "Python.valuate_price_model.executor": "Run",
+    "Python.visualize_vision_model.executor": "Run",
     "Python.without_images.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -297,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776335744751</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="final version">
+      <option name="closed" value="true" />
+      <created>1776352786003</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1776352786003</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
