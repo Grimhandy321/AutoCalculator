@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="784672c0-b6e3-4357-9133-79bc9aba98e9" name="Changes" comment="final version">
+      <change afterPath="$PROJECT_DIR$/pipeline/models/loaders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/models/vision_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/visualize_vision_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bazos_cars_labeled.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/bazos_cars_labeled.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_cleaned.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_cleaned.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/1_prepare_labels.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/1_prepare_labels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/bazos_cars_10k.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/bazos_cars_10k.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/seen_ids.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/seen_ids.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/brand_classes.npy" beforeDir="false" afterPath="$PROJECT_DIR$/models/brand_classes.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/vision_model_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/models/vision_model_final.pt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/3_train_vision_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/4_generate_vision_predictions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/4_generate_vision_predictions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/6_predict_pipeline.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testing/evaluate_vision_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/evaluate_vision_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/valuate_price_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/evaluate_price_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,42 +55,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.1_prepare_labels.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2_download_images_parallel.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3_train_vision_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4_generate_vision_predictions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5_train_price_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6_predict_pipeline.executor&quot;: &quot;Run&quot;,
-    &quot;Python.AutoJarovScraper.executor&quot;: &quot;Run&quot;,
-    &quot;Python.BasicSraper.executor&quot;: &quot;Run&quot;,
-    &quot;Python.asd.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bazos_scraper_v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.car_title_parser.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data_cleaner.executor&quot;: &quot;Run&quot;,
-    &quot;Python.evaluate_vision_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.run_scrapers.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scrape_autojarov.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scraper.executor&quot;: &quot;Run&quot;,
-    &quot;Python.trainer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.valuate_price_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.without_images.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Uživatel/PycharmProjects/AutoCalculator&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;memory.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.1_prepare_labels.executor": "Run",
+    "Python.2_download_images_parallel.executor": "Run",
+    "Python.3_train_vision_model.executor": "Run",
+    "Python.4_generate_vision_predictions.executor": "Run",
+    "Python.5_train_price_model.executor": "Run",
+    "Python.6_predict_pipeline.executor": "Run",
+    "Python.AutoJarovScraper.executor": "Run",
+    "Python.BasicSraper.executor": "Run",
+    "Python.asd.executor": "Run",
+    "Python.bazos_scraper_v2.executor": "Run",
+    "Python.car_title_parser.executor": "Run",
+    "Python.data_cleaner.executor": "Run",
+    "Python.evaluate_vision_model.executor": "Run",
+    "Python.loaders.executor": "Run",
+    "Python.run_scrapers.executor": "Run",
+    "Python.scrape_autojarov.executor": "Run",
+    "Python.scraper.executor": "Run",
+    "Python.trainer.executor": "Run",
+    "Python.valuate_price_model.executor": "Run",
+    "Python.without_images.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Uživatel/PycharmProjects/AutoCalculator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "memory.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Uživatel\PycharmProjects\AutoCalculator" />
@@ -281,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776333887178</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="final version">
+      <option name="closed" value="true" />
+      <created>1776335744751</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1776335744751</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
