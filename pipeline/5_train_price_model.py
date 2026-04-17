@@ -2,18 +2,22 @@ import os
 import joblib
 import pandas as pd
 import numpy as np
+from datetime import datetime
 
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from category_encoders import TargetEncoder
 from xgboost import XGBRegressor
+from sklearn.metrics import mean_absolute_error
 
 DATA_FILE = "../data/bazos_cars_labeled.csv"
 VISION_FILE = "../data/vision_predictions.csv"
 MODEL_DIR = "../models"
 
 os.makedirs(MODEL_DIR, exist_ok=True)
+
+CURRENT_YEAR = datetime.now().year
 
 df = pd.read_csv(DATA_FILE)
 vision_df = pd.read_csv(VISION_FILE)
@@ -28,19 +32,21 @@ df["year"] = pd.to_numeric(df["year"], errors="coerce")
 df["mileage_km"] = pd.to_numeric(df["mileage_km"], errors="coerce")
 
 df = df.dropna(subset=["price_czk"])
-df = df[(df["price_czk"] > 10000) & (df["price_czk"] < 5000000)]
+df = df[(df["price_czk"] > 10000) & (df["price_czk"] < 5_000_000)]
 
 df["year"] = df["year"].fillna(df["year"].median())
 df["mileage_km"] = df["mileage_km"].fillna(df["mileage_km"].median())
 
-for col in ["fuel", "transmission", "pred_brand", "pred_model"]:
-    df[col] = df[col].fillna("unknown").astype(str)
+df["car_age"] = (CURRENT_YEAR - df["year"]).clip(lower=0)
 
 df["mileage_km"] = df["mileage_km"].clip(lower=0)
 df["log_mileage"] = np.log1p(df["mileage_km"])
 
+for col in ["fuel", "transmission", "pred_brand", "pred_model"]:
+    df[col] = df[col].fillna("unknown").astype(str)
+
 feature_cols = [
-    "year",
+    "car_age",
     "mileage_km",
     "log_mileage",
     "fuel",
@@ -57,8 +63,10 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 categorical_features = [
-    "fuel", "transmission",
-    "pred_brand", "pred_model"
+    "fuel",
+    "transmission",
+    "pred_brand",
+    "pred_model"
 ]
 
 preprocessor = ColumnTransformer([
@@ -83,3 +91,10 @@ pipeline = Pipeline([
 pipeline.fit(X_train, y_train)
 
 joblib.dump(pipeline, os.path.join(MODEL_DIR, "price_pipeline.pkl"))
+
+print("Model trained and saved!")
+
+y_pred = pipeline.predict(X_test)
+mae = mean_absolute_error(np.expm1(y_test), np.expm1(y_pred))
+
+print(f"MAE: {mae:,.0f} CZK")

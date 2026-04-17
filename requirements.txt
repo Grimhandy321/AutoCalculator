@@ -1,3 +1,4 @@
+joblib
 tensorflow
 pandas
 numpy
@@ -8,6 +9,5 @@ xgboost
 torch
 torchvision
 tqdm
-PIL
 torche
 torchvision

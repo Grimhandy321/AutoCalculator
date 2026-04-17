@@ -13,6 +13,7 @@ from torchvision import transforms
 
 from pipeline.models.vision_model import VisionModel
 
+CURRENT_YEAR = 2026
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FRONTEND_DIR = os.path.join(BASE_DIR, "frontend")
 
@@ -99,17 +100,17 @@ def get_price():
     data = request.get_json()
 
     mileage = float(data.get("mileage", 0))
-    year = int(data.get("year", 2018))
+    year = int(data.get("year", CURRENT_YEAR))
     fuel = str(data.get("engine", "unknown"))
     transmission = "manual"
-
     brand = str(data.get("brand"))
     model_name = str(data.get("model"))
 
+    car_age = max(0, CURRENT_YEAR - year)
     log_mileage = np.log1p(max(mileage, 0))
 
     X = pd.DataFrame([{
-        "year": year,
+        "car_age": car_age,
         "mileage_km": mileage,
         "log_mileage": log_mileage,
         "fuel": fuel,
@@ -126,7 +127,11 @@ def get_price():
     pred_log = price_model.predict(X)[0]
     price = int(np.expm1(pred_log))
 
-    return jsonify({"price": price})
+    return jsonify({
+        "price": price,
+        "car_age": car_age  # optional debug info
+    })
+
 
 @app.route("/evaluation")
 def get_evaluation():

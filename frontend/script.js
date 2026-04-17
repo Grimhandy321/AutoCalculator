@@ -58,11 +58,18 @@ async function estimate() {
     const model = document.getElementById("model").value;
     const mileage = document.getElementById("mileage").value;
     const engine = document.getElementById("engine").value;
+    const year = document.getElementById("year").value;
 
     let res = await fetch(`${API}/price`, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({ brand, model, mileage, engine, year: 2018 })
+        body: JSON.stringify({
+            brand,
+            model,
+            mileage,
+            engine,
+            year
+        })
     });
 
     let data = await res.json();
